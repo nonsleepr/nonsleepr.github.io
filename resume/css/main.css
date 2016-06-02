@@ -3,9 +3,25 @@ body {
 }
 
 .row {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
   display: table;
+}
+
+.container {
+  padding: 0
+}
+
+/* DEBUG */
+#summary {
+  display: none;
+}
+
+.wrapper {
+  background-color: white;
+  margin-top: 0.2in;
+  margin-bottom: 0.2in;
+  box-shadow: 0 0 0.2in 0.2in rgb(60, 60, 60);
 }
 
 .name {
@@ -14,12 +30,13 @@ body {
 }
 
 .sidebar {
-  background-color: rgb(231, 234, 240);
+  background-color: rgb(231, 234, 240) !important;
+  -webkit-print-color-adjust: exact;
 }
 
 .sidebar li {
-  margin-left: 7px;
-  text-indent: -7px;
+  margin-left: 0.07in;
+  text-indent: -0.07in;
 }
 
 #contacts li {
@@ -33,38 +50,30 @@ body {
 }
 
 #contacts i {
-  padding-right: 3px;
-}
-
-.wrapper {
-  background-color: white;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 20px 10px rgb(60, 60, 60);
-  //font-size: 7pt;
+  padding-right: 0.03in;
 }
 
 .sidebar h1 {
-  margin-top: -10px;
+  margin-top: -0.1in;
 }
 
 .body, .sidebar {
   position: relative;
-  min-height: 1px;
-  padding: 15px;
+  min-height: 0.01in;
+  padding: 0.15in;
   display: table-cell;
   vertical-align: top;
 }
 
 .body ul {
-  padding-left: 20px;
-  margin-bottom: 0px;
+  padding-left: 0.2in;
+  margin-bottom: 0;
 }
 
 .section-header {
   color: rgb(77, 137, 255);
-  border-bottom: 2px solid rgb(77, 137, 255);
-  margin-top: 12px;
+  border-bottom: 0.02in solid rgb(77, 137, 255);
+  margin-top: 0.1in;
 }
 
 .university h4, .employer h4 {
@@ -89,7 +98,6 @@ body {
   margin-right: auto;
 }
 
-
 @media print {                
   /* Override bootstraps url behaviour */
   a[href]:after {
@@ -101,46 +109,41 @@ body {
   }
 
   .wrapper {
-    width: 200mm;
+    width: 8.5in;
     font-size: 7pt;
+    margin: 0;
   }
 
-  #bg-img {
-    position: absolute; 
-  }
-
-  .wrapper, .sidebar, .body, #bg-img {
-    height: 277mm;
+  .wrapper, .sidebar, .body {
+    height: 11in;
+    overflow: hidden;
   }
 
   .body, .sidebar {
     display: inherit;
   }
 
-  .sidebar, .body, #bg-img {
+  .sidebar, .body {
     float: left;
   }
 
-  .sidebar, #bg-img {
-    width: 50mm;
+  .sidebar {
+    width: 2in;
   }
 
   .body {
-    width: 150mm;
-    padding-top: 0;
+    width: 6.5in;
   }
 }
 
 @page {
-  size: A4;
+  /* size: Letter; */
+  size: 8.5in 11in;
   margin: 0;
 }
 
 /* Screen */
 @media not print {
-  #bg-img {
-    display: none;
-  }
 }
 
 /* Very small devices (xs) */
@@ -149,8 +152,8 @@ body {
   #education ul.list-unstyled li {
     display: inline;
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   #skills ul.list-unstyled li:after,
@@ -167,20 +170,20 @@ body {
     font-size: 13pt;
   }
 
+  .wrapper {
+    margin: 0;
+  }
+
   .body, .sidebar {
     display: inherit;
   }
 }
 
 /* Small devices (sm) */
-@media screen and  (min-width: 768px) {
+@media screen and  (min-width: 769px) {
   .wrapper {
     width: 738px;
     font-size: 8pt;
-  }
-
-  .wrapper, .sidebar, .body {
-    /* height: 1400px; */
   }
 
   .sidebar {
@@ -197,7 +200,7 @@ body {
 }
 
 /* Medium devices (md) */
-@media screen and  (min-width: 992px) {
+@media screen and  (min-width: 993px) {
   .wrapper {
     width: 962px;
     font-size: 9pt;
@@ -217,5 +220,5 @@ body {
 }
 
 /* Large devices (lg) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
 }
