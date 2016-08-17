@@ -12,10 +12,11 @@ body {
   padding: 0
 }
 
-/* DEBUG */
+/*
 #summary {
   display: none;
 }
+*/
 
 .wrapper {
   background-color: white;
