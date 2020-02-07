@@ -12,28 +12,33 @@
 ## Skills
 
 - Actor Model
+- Akka
 - Apache HBase
 - Apache Hadoop
+- Apache Kafka
 - Apache Spark
+- Asynchronous Programming
+- Automation
 - Business Analysis
 - Business Intelligence
+- CI/CD
 - Data Analysis
 - Data Integration
-- Data Migration
 - Data Mining
 - Data Quality
 - Data Warehousing
+- Database Performance Tuning
 - Databases
 - ETL
+- Git
 - Graph Processing
 - Logical Data Modeling
 - Machine Learning
-- Master Data Management
 - Natural Language Processing
 - NoSQL
-- Performance Tuning
 - Python
 - R
+- Reverse Engineering
 - SQL
 - Scala
 - Teradata
@@ -69,9 +74,9 @@ _Thesis Topic: Automatic number plate recognition._
 - Technical Lead for multiple client-facing projects.
 - Presenter at Teradata conferences and Data Science user groups.
 - Certified Teradata Solutions Developer.
-- Experienced in performance tuning, physical data modeling, data cleansing and
-  data visualization.
-- Received appreciation and recognition award from Fortune 500 company.
+- Experienced in database performance tuning, physical data modeling, data
+  cleansing and data visualization.
+- Received appreciation and recognition award from a Fortune 500 company.
 
 ## Employment
 
