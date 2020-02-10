@@ -99,7 +99,7 @@ body {
   margin-right: auto;
 }
 
-@media print {                
+@media print {
   /* Override bootstraps url behaviour */
   a[href]:after {
     content: "";
@@ -111,7 +111,7 @@ body {
 
   .wrapper {
     width: 8.5in;
-    font-size: 7pt;
+    font-size: 6pt;
     margin: 0;
   }
 

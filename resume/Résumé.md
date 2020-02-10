@@ -120,18 +120,18 @@ _Feb 2007 to Jun 2011_
 
 _Client: Intesa Sanpaolo, Russia_
 
-- Assigned as an Application Developer for newly introduced Temenos T24 system.
-  Quickly gained necessary knowledge to successfully lead a team of five
+- Assigned as an Application Developer for newly introduced banking system,
+  quickly gained necessary knowledge to successfully lead a team of five
   developers to implement a new system.
-- Migrated data from legacy banking systems to Temenos T24 solution and
-  achieved significant improvements in system performance by optimizing queries
-  and tuning databases to handle the increased data volumes.
-- While maintaining the system, I also worked with different partners to
-  collect requirements and translated them into Statements of Work. These were
-  then implemented as product features by my team and peer teams.
-- Designed a set of frameworks to integrate Temenos T24 with WebSphere MQ. This
-  resulted in a unification of the project's code base and decreased code
-  complexity which further increased system performance.
+- Migrated data from legacy banking systems to the new solution and achieved
+  significant improvements in system performance by optimizing queries and
+  tuning databases to handle the increased data volumes.
+- Worked with system's users to collect requirements and translated them into
+  Statements of Work that were later implemented as product features by my
+  team.
+- Designed a set of frameworks to integrate new banking system with WebSphere
+  MQ which resulted in a unification of the project's code base and decreased
+  code complexity which further increased system performance.
 
 ### Rosbank (Societe Generale Group)
 
