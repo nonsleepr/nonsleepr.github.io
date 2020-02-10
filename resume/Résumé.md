@@ -1,73 +1,13 @@
-# Alexander Bessonov - Résumé
+# Résumé
+
+[source]: # (http://bit.ly/nonsleepr-Résumé)
 
 ## Alexander Bessonov
 
-[//] # (links)
-
-- [alexander.bessonov@outlook.com](mailto:alexander.bessonov@outlook.com)
-- [530.675.4199](tel:+15306754199)
-- [bessonov](https://linkedin.com/in/bessonov)
-- [nonsleepr](https://github.com/nonsleepr)
-
-## Skills
-
-- Actor Model
-- Akka
-- Apache HBase
-- Apache Hadoop
-- Apache Kafka
-- Apache Spark
-- Asynchronous Programming
-- Automation
-- Business Analysis
-- Business Intelligence
-- CI/CD
-- Data Analysis
-- Data Integration
-- Data Mining
-- Data Quality
-- Data Warehousing
-- Database Performance Tuning
-- Databases
-- ETL
-- Git
-- Graph Processing
-- Logical Data Modeling
-- Machine Learning
-- Natural Language Processing
-- NoSQL
-- Python
-- R
-- Reverse Engineering
-- SQL
-- Scala
-- Teradata
-- Text Mining
-
-## Education
-
-### Moscow Power Engineering Institute (Technical University)
-
-_Master's degree: Electronic Systems 2006_
-_Thesis Topic: Automatic number plate recognition._
-
-### Additional Coursework
-
-- Machine Learning
-- Data Analysis
-- Statistics
-- Computing for Data Analysis
-- MongoDB for Developers
-- Natural Language Processing
-- Image and Video Processing
-- Social Network Analysis
-- Credit Risk Management
-- Computational Investing
-- Real-Time analytics with Apache Storm
-- Data Visualization and D3.js
-- Functional Programming Principles in Scala
-- Principles of Reactive Programming
-- Algorithms
+- :e-mail: alexander.bessonov@outlook.com
+- :iphone: [530.675.4199](tel:+15306754199)
+- :octocat: [nonsleepr](https://github.com/nonsleepr)
+- :bowtie: https://linkedin.com/in/bessonov
 
 ## Summary
 
@@ -80,10 +20,30 @@ _Thesis Topic: Automatic number plate recognition._
 
 ## Employment
 
+### Bloomberg L.P.
+
+_Big Data Engineer_
+
+_Oct 2016 to Current_
+
+- Developed a Distributed Trace system.
+- Pioneered the use of Spark's Structured Streaming within the company and
+  shared the experience on internal meetups.
+- Implemented a Docker-based integration testing framework for Continuous
+  Integration.
+- Designed and Implemented in Python a watchdog service for 24/7 monitoring of
+  the Spark Streaming jobs.
+- Onboarded and mentored new team members making an expanded team efficient in
+  a short amount of time.
+- Implemented an async Python HBase client library.
+- Standardized the Continuous Integration pipeline to improve team's code
+  quality.
+
 ### Credit Suisse (via Syntel)
 
 _Data Scientist/Data Engineer_
-_Apr 2015 to Current_
+
+_Apr 2015 to Oct 2016_
 
 - Built and deployed models to forecast various time-series data.
 - Led development of HBase-based graph database and RESTful microservices
@@ -101,6 +61,7 @@ _Apr 2015 to Current_
 ### EXL Service
 
 _Manager, Decision Analytics_
+
 _Jul 2014 to Apr 2015_
 
 - Developed complex Alteryx analytic application to model Return on Advertising
@@ -113,6 +74,7 @@ _Jul 2014 to Apr 2015_
 ### Teradata
 
 _Advanced Analytics Consultant_
+
 _Jul 2011 to Jul 2014_
 
 #### Data Analytics Projects
@@ -153,6 +115,7 @@ _Client: Sberbank, Russia_
 ### Accenture
 
 _Senior Programmer → System Analyst → Senior System Analyst_
+
 _Feb 2007 to Jun 2011_
 
 _Client: Intesa Sanpaolo, Russia_
@@ -173,6 +136,7 @@ _Client: Intesa Sanpaolo, Russia_
 ### Rosbank (Societe Generale Group)
 
 _Programmer_
+
 _Nov 2005 to Jan 2007_
 
 - Developed several C and Pascal applications for Mysis Equation core banking
@@ -185,3 +149,66 @@ _Nov 2005 to Jan 2007_
 - Contributed to OSS projects.
 - Implemented several web-scrapers to extract media resources, user profile
   information, product prices, URLs etc.
+- Reverse engineered and re-implemented UDP-based protocol used to communicate
+  with video surveillance equipment.
+
+## Education
+
+### Moscow Power Engineering Institute (Technical University)
+
+_Master's degree: Electronic Systems 2006_
+
+_Thesis Topic: Automatic number plate recognition._
+
+### Additional Coursework
+
+- Machine Learning
+- Data Analysis
+- Statistics
+- Computing for Data Analysis
+- MongoDB for Developers
+- Natural Language Processing
+- Image and Video Processing
+- Social Network Analysis
+- Credit Risk Management
+- Computational Investing
+- Real-Time analytics with Apache Storm
+- Data Visualization and D3.js
+- Functional Programming Principles in Scala
+- Principles of Reactive Programming
+- Algorithms
+
+## Skills
+
+- Actor Model
+- Akka
+- Apache HBase
+- Apache Hadoop
+- Apache Kafka
+- Apache Spark
+- Asynchronous Programming
+- Automation
+- Business Analysis
+- Business Intelligence
+- CI/CD
+- Data Analysis
+- Data Integration
+- Data Mining
+- Data Quality
+- Data Warehousing
+- Database Performance Tuning
+- Databases
+- ETL
+- Git
+- Graph Processing
+- Logical Data Modeling
+- Machine Learning
+- Natural Language Processing
+- NoSQL
+- Python
+- R
+- Reverse Engineering
+- SQL
+- Scala
+- Teradata
+- Text Mining
