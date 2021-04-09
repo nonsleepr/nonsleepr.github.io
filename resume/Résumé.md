@@ -38,6 +38,11 @@ _Oct 2016 to Current_
 - Implemented an async Python HBase client library.
 - Standardized the Continuous Integration pipeline to improve team's code
   quality.
+- Planned and performed data-store migration to Delta Lake which increased the
+  scalability of the system while also adding advanced features to the
+  Distributed Trace system.
+- Migrated data pipelines to Spark 3.x while also sharing the steps needed
+  within the company.
 
 ### Credit Suisse (via Syntel)
 
