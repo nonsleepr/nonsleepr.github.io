@@ -20,6 +20,25 @@
 
 ## Employment
 
+### An IoT company
+
+_Black-box Penetration Tester_
+
+_May 2020 to Current_
+
+- Performed web-application and mobile applications vulnerability assesments.
+- Coordinated with development team the mitigation of identified
+  vulnerabilities.
+- Reverse-engineered IoT devices' firmwares to to perform vulnerability
+  assesments.
+- Led a monthly security education training on variety of information security
+  topics.
+- Reverse engineered and re-implemented UDP-based protocol used to communicate
+  with video surveillance equipment.
+- Created a strategy to introduce a bug bounty program.
+- Performed hardware vulnerability assesments.
+- Captured Bluetooth traffic to asses security of wireless communications.
+
 ### Bloomberg L.P.
 
 _Big Data Engineer_
@@ -154,8 +173,6 @@ _Nov 2005 to Jan 2007_
 - Contributed to OSS projects.
 - Implemented several web-scrapers to extract media resources, user profile
   information, product prices, URLs etc.
-- Reverse engineered and re-implemented UDP-based protocol used to communicate
-  with video surveillance equipment.
 
 ## Education
 
