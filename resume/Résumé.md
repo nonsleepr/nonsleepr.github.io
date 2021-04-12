@@ -26,18 +26,18 @@ _Black-box Penetration Tester_
 
 _May 2020 to Current_
 
-- Performed web-application and mobile applications vulnerability assesments.
-- Coordinated with development team the mitigation of identified
+- Performed web-application and mobile applications vulnerability assessments.
+- Coordinated with the development team the mitigation of identified
   vulnerabilities.
-- Reverse-engineered IoT devices' firmwares to to perform vulnerability
-  assesments.
-- Led a monthly security education training on variety of information security
-  topics.
+- Reverse-engineered IoT devices' firmwares to perform vulnerability
+  assessments.
+- Led a monthly security education training on a variety of information
+  security topics.
 - Reverse engineered and re-implemented UDP-based protocol used to communicate
   with video surveillance equipment.
 - Created a strategy to introduce a bug bounty program.
-- Performed hardware vulnerability assesments.
-- Captured Bluetooth traffic to asses security of wireless communications.
+- Performed hardware vulnerability assessments.
+- Captured Bluetooth traffic to assess security of wireless communications.
 
 ### Bloomberg L.P.
 
