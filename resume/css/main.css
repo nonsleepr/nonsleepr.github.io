@@ -111,12 +111,12 @@ body {
 
   .wrapper {
     width: 8.5in;
-    font-size: 6pt;
+    font-size: 7pt;
     margin: 0;
   }
 
   .wrapper, .sidebar, .body {
-    height: 11in;
+    height: 14in;
     overflow: hidden;
   }
 
@@ -139,7 +139,7 @@ body {
 
 @page {
   /* size: Letter; */
-  size: 8.5in 11in;
+  size: 8.5in 14in;
   margin: 0;
 }
 
