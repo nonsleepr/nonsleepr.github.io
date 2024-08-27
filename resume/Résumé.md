@@ -1,236 +1,87 @@
-# Résumé
+# Alexander Bason
 
-[source]: # (http://bit.ly/nonsleepr-Résumé)
-
-## Alexander Bessonov
-
-- :e-mail: alexander.bessonov@outlook.com
-- :iphone: [530.675.4199](tel:+15306754199)
-- :octocat: [nonsleepr](https://github.com/nonsleepr)
-- :bowtie: https://linkedin.com/in/bessonov
+[530.675.4199](tel:+15306754199) | [alexander.bason@35.yt](mailto:alexander.bason@35.yt)
 
 ## Summary
+Software Engineer and security professional with extensive experience in big data, distributed systems, cloud security, penetration testing, and vulnerability assessment. Proven track record of leading complex projects and security initiatives, driving technical innovation, mentoring teams, and discovering critical vulnerabilities. Adept at enhancing organizational security posture through proactive research, tool development, and effective team collaboration. Skilled in performance optimization, system architecture, and secure software development.
 
-- Technical Lead for multiple client-facing projects.
-- Presenter at Teradata conferences and Data Science user groups.
-- Certified Teradata Solutions Developer.
-- Experienced in database performance tuning, physical data modeling, data
-  cleansing and data visualization.
+## Core Competencies
+- Technical Leadership
+- System Architecture Design
+- Performance Optimization
+- Security Assessment
+- Team Mentoring and Development
+- Big Data Processing
+- Distributed Systems
+
+## Technical Skills
+- **Languages**: Python, Scala, SQL, Go, C
+- **Big Data**: Apache Spark, Hadoop, HBase, Kafka
+- **NoSQL**: MongoDB, Neo4j, HBase
+- **Cloud**: AWS
+- **Security**: Penetration Testing, Red Team Operations
+- **Other**: CI/CD, Machine Learning, Data Analytics
+
+## Notable Achievements
+- Discovered critical vulnerabilities in third-party products, including an authentication bypass with CVE score 10.0.
+- Contributed to open-source projects, including fixing a critical Squid proxy vulnerability.
+- Presented at Teradata conferences and Data Science user groups.
 - Received appreciation and recognition award from a Fortune 500 company.
 
-## Employment
+## Professional Experience
 
-### An IoT company
+### Bloomberg L.P. (Oct 2016 - Present)
 
-_Black-box Penetration Tester_
+#### Red Team Operator (May 2021 - Present)
+- Identified and reported high-impact vulnerabilities, including an authentication bypass in Pomerium (CVE score 10.0) and a SAML bypass in Grafana, driving key security enhancements.
+- Successfully compromised an AWS EKS cluster in a hardened environment, showcasing advanced cloud security penetration testing skills.
+- Created custom tools, including a SAML plugin for Burp Suite and an ICMP-based proxy, to overcome challenges in locked-down environments during assessments.
+- Led the integration of GitGuardian across product teams, improving secret management practices and overall security posture.
+- Developed and implemented a proof-of-concept for a critical Passport-SAML vulnerability, leading its remediation across Bloomberg’s production sites.
+- Contributed to the discovery and upstream fix of a critical Squid proxy vulnerability, demonstrating a commitment to global software security.
+- Developed automation tools to streamline Red Team operations, significantly improving assessment efficiency and reporting processes.
+- Presented technical findings to engineering audiences of over 100, enhancing security awareness and promoting best practices.
 
-_May 2020 to Current_
+#### Big Data Engineer (Oct 2016 - May 2021)
+- Pioneered the use of Spark's Structured Streaming within the company, sharing expertise through internal meetups.
+- Led the evaluation and deployment of a Delta Lake-based backend for a distributed tracing system, improving scalability and adding advanced features.
+- Designed and implemented a watchdog service for 24/7 monitoring of Spark Streaming jobs.
+- Developed an async Python HBase client library and standardized the Continuous Integration pipeline.
+- Onboarded and mentored new team members, significantly improving team efficiency.
 
-- Performed web-application and mobile applications vulnerability assessments.
-- Coordinated with the development team the mitigation of identified
-  vulnerabilities.
-- Reverse-engineered IoT devices' firmwares to perform vulnerability
-  assessments.
-- Led a monthly security education training on a variety of information
-  security topics.
-- Reverse engineered and re-implemented UDP-based protocol used to communicate
-  with video surveillance equipment.
-- Created a strategy to introduce a bug bounty program.
-- Performed hardware vulnerability assessments.
-- Captured Bluetooth traffic to assess security of wireless communications.
+### An IoT Company (May 2020 - April 2021)
+#### Black-box Penetration Tester
+- Conducted web and mobile application vulnerability assessments, identifying critical security flaws.
+- Reverse-engineered IoT device firmwares and UDP-based protocols for security analysis.
+- Led monthly security education training sessions on various information security topics.
 
-### Bloomberg L.P.
+### Credit Suisse (via Syntel) (Apr 2015 - Oct 2016)
+#### Data Scientist/Data Engineer
+- Developed forecasting models for time-series data and led the creation of an HBase-based graph database.
+- Implemented entity resolution algorithms using Apache Spark GraphX and developed streaming graph visualization web apps.
+- Created R and Python packages to assist data analysts and deployed external data acquisition pipelines.
 
-_Big Data Engineer_
+### EXL Service (Jul 2014 - Apr 2015)
+#### Manager, Decision Analytics
+- Developed complex analytic applications for Return on Advertising Spend using advanced data analytics tools, R, and Tableau.
+- Implemented a report generation framework and performed text-mining on insurance claims data.
 
-_Oct 2016 to Current_
+### Teradata (Jul 2011 - Jul 2014)
+#### Advanced Analytics Consultant
+- Served as a technical presales consultant for Teradata data analytics solutions.
+- Implemented Proof-of-Concept solutions for various customers, including market basket analysis and text mining for credit scoring.
+- Revived and updated Teradata's in-database analytical solution (teradataR).
 
-- Developed a Distributed Trace system.
-- Pioneered the use of Spark's Structured Streaming within the company and
-  shared the experience on internal meetups.
-- Implemented a Docker-based integration testing framework for Continuous
-  Integration.
-- Designed and Implemented in Python a watchdog service for 24/7 monitoring of
-  the Spark Streaming jobs.
-- Onboarded and mentored new team members making an expanded team efficient in
-  a short amount of time.
-- Implemented an async Python HBase client library.
-- Standardized the Continuous Integration pipeline to improve team's code
-  quality.
-- Planned and performed data-store migration to Delta Lake which increased the
-  scalability of the system while also adding advanced features to the
-  Distributed Trace system.
-- Migrated data pipelines to Spark 3.x while also sharing the steps needed
-  within the company.
+### Accenture (Feb 2007 - Jun 2011)
+#### Senior System Analyst
+- Led a team of five developers in implementing a new banking system for Intesa Sanpaolo, Russia.
+- Optimized system performance through query optimization and database tuning.
+- Designed frameworks to integrate the banking system with WebSphere MQ, improving code base unification.
 
-### Credit Suisse (via Syntel)
-
-_Data Scientist/Data Engineer_
-
-_Apr 2015 to Oct 2016_
-
-- Built and deployed models to forecast various time-series data.
-- Led development of HBase-based graph database and RESTful microservices
-  utilizing the database and Cloudera Search (Solr).
-- Led development of streaming graph visualization web app (based on D3.js,
-  Sigma.js and Oboe.js).
-- Designed and implemented entity resolution algorithms and frameworks for SNA
-  project using Apache Spark GraphX.
-- Implemented R and Python packages to help data analysts to obtain required
-  data.
-- Implemented frameworks to run R and Python code on Hadoop cluster.
-- Implemented web scrapers for structured and semi-structured data.
-- Deployed several external data acquisition pipelines.
-
-### EXL Service
-
-_Manager, Decision Analytics_
-
-_Jul 2014 to Apr 2015_
-
-- Developed complex Alteryx analytic application to model Return on Advertising
-  Spend using Alteryx, R and Tableau.
-- Implemented report generation framework.
-- Performed text-mining on insurance claims data using Revolution Analytics
-  R and Python.
-- Developed streaming data processing pipeline in Python.
-
-### Teradata
-
-_Advanced Analytics Consultant_
-
-_Jul 2011 to Jul 2014_
-
-#### Data Analytics Projects
-
-Technical presales consultant for Teradata data analytics solutions: Teradata
-Aster, Teradata in-database analytics using R.
-
-- Implemented several Proof-of-Concept solutions, some of which led to sales,
-  for different customers:
-  - Market basket and customer behavior analysis for retail customer;
-  - Text mining in social network for credit scoring and bank's customer
-    segmentation;
-  - Telco's subscriber segmentation algorithm using statistical computing
-    language (R) and in-database calculations on Teradata.
-- Organized internal knowledge-sharing sessions to advocate data analytics
-  products and possible catch-points within the organization.
-- Revived the Teradata's in-database analytical solution (teradataR) by fixing
-  and updating its code.
-- Reverse-engineered and documented telco's legacy code for churn prediction
-  solution using Neo4j graph database.
-
-#### Multiple Data Warehouse implementation consulting projects
-
-_Client: Sberbank, Russia_
-
-- As part of a Master Data Management (MDM) initiative, replaced a set of
-  scattered, manually executed scripts with an automated process to improve
-  data quality by addressing communication bottlenecks and execution errors
-  with the manual process.
-- Spearheaded implementation of MDM migration project growing Teradata
-  recognition along with bringing additional $200k in revenues.
-- Automated data quality reporting by re-implementing Data Quality Management
-  (DQM) solution.
-- Maintained ERwin data model for MDM solution.
-- Made changes to physical database design to improve query performance.
-- Implemented stored procedures based framework for DQM.
-
-### Accenture
-
-_Senior Programmer → System Analyst → Senior System Analyst_
-
-_Feb 2007 to Jun 2011_
-
-_Client: Intesa Sanpaolo, Russia_
-
-- Assigned as an Application Developer for newly introduced banking system,
-  quickly gained necessary knowledge to successfully lead a team of five
-  developers to implement a new system.
-- Migrated data from legacy banking systems to the new solution and achieved
-  significant improvements in system performance by optimizing queries and
-  tuning databases to handle the increased data volumes.
-- Worked with system's users to collect requirements and translated them into
-  Statements of Work that were later implemented as product features by my
-  team.
-- Designed a set of frameworks to integrate new banking system with WebSphere
-  MQ which resulted in a unification of the project's code base and decreased
-  code complexity which further increased system performance.
-
-### Rosbank (Societe Generale Group)
-
-_Programmer_
-
-_Nov 2005 to Jan 2007_
-
-- Developed several C and Pascal applications for Mysis Equation core banking
-  system.
-
-### Personal Projects
-
-- Designed and implemented data analytics architecture for an antifraud project
-  using Python OLAP framework, Neo4j and PostrgreSQL.
-- Contributed to OSS projects.
-- Implemented several web-scrapers to extract media resources, user profile
-  information, product prices, URLs etc.
+### Rosbank (Societe Generale Group) (Nov 2005 - Jan 2007)
+#### Programmer
+- Developed C applications for the Mysis Equation core banking system.
 
 ## Education
-
 ### Moscow Power Engineering Institute (Technical University)
-
-_Master's degree: Electronic Systems 2006_
-
-_Thesis Topic: Automatic number plate recognition._
-
-### Additional Coursework
-
-- Machine Learning
-- Data Analysis
-- Statistics
-- Computing for Data Analysis
-- MongoDB for Developers
-- Natural Language Processing
-- Image and Video Processing
-- Social Network Analysis
-- Credit Risk Management
-- Computational Investing
-- Real-Time analytics with Apache Storm
-- Data Visualization and D3.js
-- Functional Programming Principles in Scala
-- Principles of Reactive Programming
-- Algorithms
-
-## Skills
-
-- Actor Model
-- Akka
-- Apache HBase
-- Apache Hadoop
-- Apache Kafka
-- Apache Spark
-- Asynchronous Programming
-- Automation
-- Business Analysis
-- Business Intelligence
-- CI/CD
-- Data Analysis
-- Data Integration
-- Data Mining
-- Data Quality
-- Data Warehousing
-- Database Performance Tuning
-- Databases
-- ETL
-- Git
-- Graph Processing
-- Logical Data Modeling
-- Machine Learning
-- Natural Language Processing
-- NoSQL
-- Python
-- R
-- Reverse Engineering
-- SQL
-- Scala
-- Teradata
-- Text Mining
+Master's degree: Electronic Systems, 2006
