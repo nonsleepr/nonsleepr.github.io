@@ -3,23 +3,18 @@
 [530.675.4199](tel:+15306754199) | [alexander.bason@35.yt](mailto:alexander.bason@35.yt)
 
 ## Summary
-Results-driven cybersecurity professional and software engineer with close to
-20 years of IT experience, specializing in penetration testing, red teaming,
-and vulnerability research. Recognized for uncovering critical vulnerabilities
-across diverse systems, improving security posture, and leading high-impact
-technical projects. Skilled in delivering technical mentorship, fostering team
-collaboration, and effectively communicating complex findings to both technical
-and non-technical stakeholders. Seeking a challenging role to leverage both
-cybersecurity and software engineering expertise to strengthen an
-organization’s security defenses.
-
-## Technical Skills
-- **Programming Languages**: Python, Go, PowerShell, Scala, SQL, C/C++
-- **Big Data**: Apache Spark, Hadoop, HBase, Kafka, Delta Lake
-- **NoSQL**: MongoDB, Neo4j, HBase
-- **Cloud**: AWS
-- **Security**: Penetration Testing, Red Team Operations
-- **Other**: Docker, Kubernetes, CI/CD, Machine Learning, Data Analytics, Git
+Highly skilled Red Team Operator and Security Researcher with demonstrated
+expertise in advanced persistent threat emulation and critical vulnerability
+discovery, backed by close to 20 years of software engineering experience.
+Track record of discovering multiple high-impact CVEs and successfully
+compromising complex enterprise environments through custom exploit
+development, Active Directory attacks, and cloud infrastructure exploitation.
+Proven ability to develop offensive tooling, automate attack frameworks, and
+deliver technical mentorship to engineering teams. Combines deep technical
+knowledge in both offensive security and software development to identify and
+exploit vulnerabilities that evade traditional security controls, while
+effectively communicating findings and empowering teams to implement robust
+security practices.
 
 ## Notable Achievements
 - Identified a dependency on a vulnerable library (CVE-2022-41912) within
@@ -150,6 +145,17 @@ improving code base unification.
 ### Rosbank (Societe Generale Group) (Nov 2005 - Jan 2007)
 #### Programmer
 - Developed C applications for the Mysis Equation core banking system.
+
+## Technical Skills
+- **Offensive Security**: Network Penetration Testing, Active Directory
+Exploitation, Cloud Security Assessment (AWS), Web Application Security, Custom
+Exploit Development, Red Team Operations, Social Engineering
+- **Security Tools**: Burp Suite, PowerShell Empire, Bloodhound, Responder,
+Nmap, Wireshark
+- **Programming Languages**: Python, Go, PowerShell, Scala, SQL, C/C++
+- **Infrastructure & Cloud**: AWS, Docker, Kubernetes, CI/CD
+- **Data Engineering**: Apache Spark, Hadoop, HBase, Kafka, Delta Lake,
+MongoDB, Neo4j
 
 ## Education
 ### Moscow Power Engineering Institute (Technical University)
