@@ -89,11 +89,16 @@
       "startDate": "2016-10-10",
       "endDate": "2021-05-01",
       "highlights": [
-        "Pioneered the use of Spark's Structured Streaming within the company, sharing expertise through internal meetups.",
-        "Led the evaluation and deployment of a Delta Lake-based backend for a distributed tracing system, improving scalability and adding advanced features.",
-        "Designed and implemented a watchdog service for 24/7 monitoring of Spark Streaming jobs.",
-        "Developed an async Python HBase client library and standardized the Continuous Integration pipeline.",
-        "Onboarded and mentored new team members, significantly improving team efficiency."
+        "Pioneered the adoption of Delta Lake for distributed tracing systems, leading evaluation, strategy definition, and deployment to improve scalability and enable advanced features.",
+        "Successfully migrated large-scale big data applications from Hive to Delta Lake storage, optimizing architecture, cluster resource usage, and query capabilities.",
+        "Designed and implemented a critical monitoring service, replacing legacy systems and enhancing 24/7 reliability for Spark Streaming jobs.",
+        "Onboarded and mentored new team members, fostering their growth into independent contributors within a year and significantly improving team efficiency.",
+        "Delivered technical talks on Spark Streaming at internal meetups and cross-functional distributed systems groups, sharing expertise and driving collaboration across teams.",
+        "Developed and maintained an internal Python HBase client library, streamlining workflows and enabling flexible integrations for HBase projects.",
+        "Collaborated with the internal Hadoop team managing large-scale infrastructure to implement Spark 3, achieving significant performance improvements with Delta storage.",
+        "Enhanced the stability and performance of critical systems, implementing automated application restarts, resolving upstream code issues, and exceeding performance benchmarks.",
+        "Increased the scalability and reliability of big data applications, ensuring robust support for future growth.",
+        "Successfully delivered multiple high-impact projects, including Delta Lake Proof of Concept, on schedule and beyond expectations."
       ]
     },
     {
