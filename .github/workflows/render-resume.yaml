@@ -1,0 +1,56 @@
+name: render-resume
+run-name: ${{ github.actor }} is generating a resume
+on:
+  - push
+  - workflow_dispatch
+
+jobs:
+  render-resume:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4
+      - name: Install yq
+        uses: mikefarah/yq@master
+      - name: Setup Pages
+        uses: actions/configure-pages@v5.0.0
+      - name: Install JSONResume with themes
+        run: |
+          npm install -g \
+            resume-cli \
+            jsonresume-theme-joeytall \
+            jsonresume-theme-vitae \
+            jsonresume-theme-dinesh \
+            jsonresume-theme-even \
+            jsonresume-theme-kendall \
+            jsonresume-theme-classy \
+            jsonresume-theme-short \
+            jsonresume-theme-onepage-plus
+
+      - run: |
+          mkdir -p _site/resume
+
+          yq -o json rt-resume/resume.yaml | resume export --theme even --resume - _site/rt-resume.html
+          yq -o json se-resume/resume.yaml | resume export --theme even --resume - _site/se-resume.html
+
+          yq -o json resume/resume.yaml | resume export --theme even  --resume - _site/resume/index.html
+          yq -o json resume/resume.yaml | resume export --theme short --resume - _site/resume.pdf
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    steps:
+      - name: Deploy artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
