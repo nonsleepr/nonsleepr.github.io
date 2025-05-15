@@ -32,7 +32,7 @@
 }
 
 /* Light mode theme variables */
-@media (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: light) { 
   :root {
     --background: var(--base3);
     --sidebar-bg: var(--base2);
@@ -42,6 +42,19 @@
     --border-color: var(--blue);
     --skill-tag-bg: var(--base3);
     --skill-tag-color: var(--base01);
+  }
+}
+
+@media print and (prefers-color-scheme: light) { 
+  :root {
+    --background: white;
+    --sidebar-bg: white;
+    --text-color: var(--black);
+    --heading-color: var(--blue);
+    --dates-color: var(--black);
+    --border-color: var(--blue);
+    --skill-tag-bg: white;
+    --skill-tag-color: var(--black);
   }
 }
 
@@ -145,7 +158,6 @@ a:hover {
   
   #sidebar {
     background-color: white !important;
-    color: var(--text-color) !important;
     border-color: var(--border-color) !important;
   }
   
@@ -158,7 +170,7 @@ a:hover {
   }
   
   a {
-    color: var(--base00) !important;
+    color: var(--black) !important;
   }
 
   .skill-tag {

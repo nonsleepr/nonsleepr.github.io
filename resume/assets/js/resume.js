@@ -363,7 +363,7 @@ function renderWorkExperience(work) {
         
         work.forEach(job => {
             const div = document.createElement('div');
-            div.className = `employer-block mb-6${job.highlights && job.highlights.length > 5 ? " large-block" : ""}`;
+            div.className = `employer-block mb-6${job.highlights && job.highlights.length > 10 ? " large-block" : ""}`;
             
             const h3 = document.createElement('h3');
             h3.className = "text-md font-semibold job-title";
