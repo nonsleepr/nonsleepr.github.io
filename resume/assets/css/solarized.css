@@ -1,0 +1,168 @@
+/* Solarized Color Palette for Resume Template */
+
+:root {
+  /* Solarized Base Colors */
+  --base03: #002b36; /* dark background */
+  --base02: #073642; /* dark sidebar */
+  --base01: #586e75; /* dark content */
+  --base00: #657b83; /* dark text */
+  --base0: #839496;  /* light content */
+  --base1: #93a1a1;  /* light emphasized content */
+  --base2: #eee8d5;  /* light background highlights */
+  --base3: #fdf6e3;  /* light background */
+  
+  /* Solarized Accent Colors */
+  --yellow: #b58900;
+  --orange: #cb4b16;
+  --red: #dc322f;
+  --magenta: #d33682;
+  --violet: #6c71c4;
+  --blue: #268bd2;
+  --cyan: #2aa198;
+  --green: #859900;
+
+  --subheading-color: var(--yellow);
+  --job-title-color: var(--orange);
+  --dates-color: var(--base01);
+  --border-color: var(--blue);
+  
+  /* Component-specific colors */
+  --print-button-bg: var(--blue);
+  --print-button-hover-bg: var(--cyan);
+}
+
+/* Light mode theme variables */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: var(--base3);
+    --sidebar-bg: var(--base2);
+    --text-color: var(--base00);
+    --heading-color: var(--blue);
+    --dates-color: var(--base1);
+    --border-color: var(--blue);
+    --skill-tag-bg: var(--base3);
+    --skill-tag-color: var(--base01);
+  }
+}
+
+/* Dark mode theme variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--base03);
+    --sidebar-bg: var(--base02);
+    --text-color: var(--base0);
+    --heading-color: var(--blue);
+    --dates-color: var(--base1);
+    --border-color: var(--blue);
+    --skill-tag-bg: var(--base03);
+    --skill-tag-color: var(--base1);
+  }
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+/* ============================================
+   Typography & Headings
+   ============================================ */
+h1, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+h2 {
+  color: var(--subheading-color);
+  border-color: var(--border-color) !important;
+}
+
+h3 {
+  color: var(--job-title-color);
+}
+
+.date {
+  color: var(--dates-color);
+}
+
+a {
+  color: var(--blue) !important;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   Sidebar Styles
+   ============================================ */
+#sidebar {
+  background-color: var(--sidebar-bg);
+  color: var(--text-color);
+}
+
+#sidebar .subtitle,
+#sidebar .dates {
+  color: var(--dates-color);
+}
+
+.content-section {
+  background-color: var(--background);
+}
+
+.section-header {
+  border-color: var(--border-color);
+}
+
+.skill-tag {
+  background: var(--skill-tag-bg);
+  color: var(--skill-tag-color);
+}
+
+.profile-photo {
+  border-color: var(--border-color);
+}
+
+.print-button {
+  background-color: var(--print-button-bg);
+  color: white;
+}
+
+.print-button:hover {
+  background-color: var(--print-button-hover-bg);
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+  body {
+    background-color: white;
+  }
+  
+  #sidebar {
+    background-color: white !important;
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+  }
+  
+  #sidebar h2 {
+    color: var(--yellow) !important;
+  }
+  
+  .content-section {
+    background-color: white !important;
+  }
+  
+  a {
+    color: var(--base00) !important;
+  }
+
+  .skill-tag {
+    background: white !important;
+    color: var(--skill-tag-color);
+  }
+}

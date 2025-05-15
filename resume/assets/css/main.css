@@ -1,0 +1,206 @@
+/* Main Layout Styles for Resume Template */
+
+/* Import Open Sans Condensed font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+/* Base styles */
+body {
+  font-family: 'Open Sans Condensed', Arial, sans-serif;
+  font-size: 11pt;
+}
+
+/* Sidebar styles */
+#sidebar {
+  max-height: initial;
+}
+
+/* Sidebar typography */
+#sidebar h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#sidebar .subtitle {
+  font-size: 9pt;
+}
+
+/* Center only the name, photo and title */
+#sidebar .text-center {
+  text-align: center;
+}
+#sidebar .text-center h1,
+#sidebar .text-center p {
+  text-align: center;
+}
+#sidebar .skill-tag {
+  font-size: 8pt;
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  #sidebar {
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+}
+
+/* Print styles */
+@media print {
+  @page {
+    margin: 0.5in;
+  }
+  
+  @page :first {
+    margin-top: 0.5in;
+  }
+  
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    position: relative;
+    font-size: 10pt;
+  }
+  
+  /* Resume wrapper for print */
+  .resume-wrapper {
+    position: relative;
+    page-break-after: always;
+  }
+  
+  /* Two-column sidebar layout for print */
+  .print\:sidebar-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.2in;
+  }
+  
+  .print\:sidebar-left {
+    grid-column: 1;
+  }
+  
+  .print\:sidebar-right {
+    grid-column: 2;
+    align-self: center;
+  }
+  
+  /* Ensure proper text alignment in print mode */
+  #sidebar .text-center {
+    text-align: center !important;
+  }
+  #sidebar .text-center h1,
+  #sidebar .text-center p {
+    text-align: center !important;
+  }
+  #sidebar .text-center.print\:text-left {
+    text-align: left !important;
+  }
+  
+  /* Page break control for content blocks */
+  .sidebar-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  .content-section > section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  .employer-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  /* Allow breaking for large blocks that exceed a page */
+  .large-block {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+  
+  .content-section {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  a[href]:after {
+    content: "";
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  
+  
+  /* Print button */
+  .print-button {
+    display: none !important;
+  }
+}
+
+/* Custom utility classes */
+.resume-wrapper {
+  max-width: 8.5in;
+  margin: 0 auto;
+}
+
+.sidebar {
+  padding: 0.15in;
+  text-align: left; /* Default to left alignment for most content */
+}
+
+.main-content {
+  padding: 0.18in 0.3in;
+}
+
+.profile-photo {
+  max-width: 1.5in;
+  border-radius: 50%;
+  border: 4px solid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0.1in auto 0.15in auto;
+  display: block; /* Ensure it's a block element */
+}
+
+.section-header {
+  border-bottom: 2px solid;
+  margin: 0.1in 0;
+}
+
+.sidebar-section {
+  margin-bottom: 0.18in;
+}
+
+.employer-block {
+  margin-bottom: 0.25in;
+  break-inside: avoid;
+}
+
+/* Allow breaking inside very large blocks */
+.large-block {
+  break-inside: auto;
+}
+
+.skill-tag {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 2px 6px;
+  margin: 1px 2px 1px 0;
+  font-size: 8pt;
+}
+
+/* Print button */
+.print-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1000;
+}

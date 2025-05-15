@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="assets/css/solarized.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body class="antialiased">
+    <button id="print-button" class="print-button">Print</button>
+
+    <div class="resume-wrapper mx-auto max-w-6xl print:max-w-none print:p-0 print:relative">
+        <div id="loading" class="loading">Loading resume data...</div>
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="resume-content" style="display: none;">
+            <!-- Sidebar structure -->
+            <aside id="sidebar" class="sidebar p-6 print:pb-0 lg:fixed lg:w-1/4 lg:h-screen lg:top-0 lg:left-0 lg:overflow-y-auto print:static print:w-full print:h-auto">
+                <div class="print:sidebar-grid">
+                    <div id="profile-section" class="print:sidebar-left text-center mb-6 print:text-left">
+                        <!-- Profile content will be inserted here -->
+                    </div>
+                    
+                    <div class="print:sidebar-right">
+                        <section id="contact-section" class="sidebar-section print:mb-0">
+                            <!-- Contact content will be inserted here -->
+                        </section>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="sidebar-section">
+                        <section id="skills-section" class="sidebar-section">
+                            <!-- Skills content will be inserted here -->
+                        </section>
+                    </div>
+                    
+                    <div class="sidebar-section">
+                        <section id="education-section" class="sidebar-section">
+                            <!-- Education content will be inserted here -->
+                        </section>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main content structure -->
+            <main id="main-content" class="main-content p-6 lg:ml-[33.3333%] print:p-0 print:w-full print:ml-0">
+                <section id="resume-main-content" class="content-section shadow-lg rounded-lg p-6 print:pt-0 print:shadow-none print:rounded-none print:border-none">
+                    <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-none print:prose-sm">
+                        <div id="summary-section">
+                            <!-- Summary content will be inserted here -->
+                        </div>
+                        
+                        <div id="work-section">
+                            <!-- Work experience content will be inserted here -->
+                        </div>
+                        
+                        <div id="projects-section">
+                            <!-- Projects content will be inserted here -->
+                        </div>
+                        
+                        <div id="awards-section">
+                            <!-- Awards content will be inserted here -->
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="assets/js/resume.js"></script>
+</body>
+</html>
