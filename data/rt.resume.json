@@ -7,7 +7,7 @@
     "email": "alexander.bason+rt-resume@35.yt",
     "phone": "(530) 675-4199",
     "url": "https://nonsleepr.github.io/",
-    "summary": "Highly skilled Red Team Operator and Security Researcher with demonstrated\nexpertise in advanced persistent threat emulation and critical\nvulnerability discovery, backed by close to 20 years of software\nengineering experience. Track record of discovering multiple high-impact\nCVEs and successfully compromising complex enterprise environments through\ncustom exploit development, Active Directory attacks, and cloud\ninfrastructure exploitation. Proven ability to develop offensive tooling,\nautomate attack frameworks, and deliver technical mentorship to engineering\nteams. Combines deep technical knowledge in both offensive security and\nsoftware development to identify and exploit vulnerabilities that evade\ntraditional security controls, while effectively communicating findings and\nempowering teams to implement robust security practices.",
+    "summary": "Red team operator and vulnerability researcher combining two decades of software\nengineering with advanced offensive security to identify critical flaws that\nbypass traditional controls. Discovered multiple high-impact CVEs and achieved\nfull compromise of complex enterprise environments through custom exploit\ndevelopment, mobile application reverse engineering, and cloud infrastructure\nexploitation. Leverages deep distributed systems knowledge to accelerate attack\npath identification and develop sophisticated bypass techniques that traditional\nsecurity testing often misses.",
     "location": {
       "address": "",
       "postalCode": "NY 10022",
@@ -28,16 +28,6 @@
       }
     ]
   },
-  "projects": [
-    {
-      "name": "Vulnerability Research",
-      "highlights": [
-        "Identified a dependency on a vulnerable library (CVE-2022-41912) within Grafana, demonstrated an authentication bypass within the product. Reported the finding to the vendor, enabling a critical security update.",
-        "Identified and reported critical authentication bypass vulnerability in Pomerium access proxy (CVE-2023-33189).",
-        "Escalated Squid proxy DoS (Denial of Service) vulnerability (CVE-2023-46847) to RCE (Remote Code Execution) during the red team engagement. Contributed to the fix of the vulnerability."
-      ]
-    }
-  ],
   "work": [
     {
       "name": "Bloomberg L.P.",
@@ -50,8 +40,13 @@
       "highlights": [
         "Conducted comprehensive red team engagements, simulating advanced persistent threats (APTs) to assess and improve Bloomberg's infrastructure and application security posture.",
         "Achieved critical impact in assessments by exploiting deserialization vulnerabilities, misconfigurations, command injection vulnerabilities, etc., leading to full compromise of high-value assets and network pivoting across isolated segments.",
-        "Successfully compromised AWS EKS clusters through misconfigured IAM policies, demonstrating advanced cloud security penetration testing skills and improving cloud security practices.",
-        "Developed custom offensive tooling, including ICMP and RDP proxies, to navigate restrictive network environments and enhance lateral movement capabilities during assessments.",
+        "Successfully compromised AWS EKS clusters through misconfigured IAM policies and leveraged command injection vulnerabilities during Docker image builds to achieve full cluster compromise, demonstrating advanced cloud and container security penetration testing skills.",
+        "Performed advanced mobile application reverse engineering on obfuscated Android applications and iOS app decompilation, successfully identifying hardcoded GitHub API keys and discovering mobile-specific API endpoints for security assessment.",
+        "Utilized Frida framework for dynamic analysis, certificate pinning bypass, and runtime manipulation of mobile applications, enabling comprehensive security testing of protected applications.",
+        "Executed mobile security assessments on rooted Android devices and jailbroken iOS devices with Frida server deployment and Magisk extensions to evade anti-emulator protections and root detection mechanisms.",
+        "Successfully bypassed certificate pinning and anti-emulator protections using specialized mobile security toolchains and discovered hardcoded API credentials through systematic mobile application analysis.",
+        "Developed custom offensive tooling leveraging software engineering expertise to create ICMP and RDP proxies that navigate restrictive network environments and enhance lateral movement capabilities during assessments.",
+        "Applied two decades of software engineering experience to identify architecture-level vulnerabilities often missed by traditional security testing approaches.",
         "Executed advanced Active Directory attacks including Kerberoasting and AD Certificate Services exploitation, achieving domain-level compromise in complex environments.",
         "Performed vulnerability research on third-party software and critical infrastructure, discovering high-impact vulnerabilities in email security systems, authentication mechanisms, and proxy services.",
         "Led successful phishing and MitM campaigns.",
@@ -174,6 +169,24 @@
       ]
     }
   ],
+  "projects": [
+    {
+      "name": "Vulnerability Research",
+      "highlights": [
+        "Identified a dependency on a vulnerable library (CVE-2022-41912) within Grafana, demonstrated an authentication bypass within the product. Reported the finding to the vendor, enabling a critical security update.",
+        "Identified and reported critical authentication bypass vulnerability in Pomerium access proxy (CVE-2023-33189).",
+        "Escalated Squid proxy DoS (Denial of Service) vulnerability (CVE-2023-46847) to RCE (Remote Code Execution) during the red team engagement. Contributed to the fix of the vulnerability."
+      ]
+    },
+    {
+      "name": "Custom Offensive Tooling",
+      "highlights": [
+        "Developed ICMP and RDP proxy tools to enable lateral movement through restrictive network environments during red team assessments.",
+        "Created automation frameworks to streamline red team operations, improving assessment efficiency and standardizing reporting processes.",
+        "Built custom scanners and proof-of-concept exploits for critical vulnerabilities in open-source libraries, enabling rapid security response across engineering teams."
+      ]
+    }
+  ],
   "education": [
     {
       "institution": "Moscow Power Engineering Institute",
@@ -190,9 +203,13 @@
       "level": "Master",
       "keywords": [
         "Network Penetration Testing",
+        "Mobile Application Security",
+        "iOS/Android Reverse Engineering",
         "Active Directory Exploitation",
         "Cloud Security Assessment (AWS)",
+        "Container Security (Docker/Kubernetes)",
         "Web Application Security",
+        "API Security Testing",
         "Custom Exploit Development",
         "Red Team Operations",
         "Social Engineering"
@@ -203,11 +220,15 @@
       "level": "Master",
       "keywords": [
         "Burp Suite",
+        "Frida",
         "PowerShell Empire",
         "Bloodhound",
         "Responder",
         "Nmap",
-        "Wireshark"
+        "Wireshark",
+        "Metasploit",
+        "SQLMap",
+        "OWASP ZAP"
       ]
     },
     {
