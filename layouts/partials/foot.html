@@ -1,0 +1,33 @@
+<script>
+(function() {
+  // Find all code blocks
+  document.querySelectorAll('pre > code').forEach(function(codeBlock) {
+    const pre = codeBlock.parentNode;
+    pre.style.position = 'relative';
+    
+    // Create copy button
+    const button = document.createElement('button');
+    button.className = 'copy-button';
+    button.textContent = 'Copy';
+    
+    button.addEventListener('click', function() {
+      const code = codeBlock.textContent;
+      navigator.clipboard.writeText(code).then(function() {
+        button.textContent = 'Copied!';
+        button.classList.add('copied');
+        setTimeout(function() {
+          button.textContent = 'Copy';
+          button.classList.remove('copied');
+        }, 2000);
+      }).catch(function() {
+        button.textContent = 'Failed';
+        setTimeout(function() {
+          button.textContent = 'Copy';
+        }, 2000);
+      });
+    });
+    
+    pre.appendChild(button);
+  });
+})();
+</script>

@@ -1,0 +1,236 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Alexander Bason",
+    "label": "Lead Software Enginer",
+    "image": "https://avatars.githubusercontent.com/u/2337602",
+    "email": "alexander.bason+se-resume@35.yt",
+    "phone": "(530) 675-4199",
+    "url": "https://nonsleepr.github.io/",
+    "summary": "Accomplished Lead Software Engineer with nearly 20 years of diverse\nexperience spanning software development, big data engineering, and\nsecurity leadership. Demonstrated expertise in designing and delivering\nscalable solutions, enhancing team productivity, and mentoring engineers to\nachieve excellence. Adept at leading cross-functional initiatives,\nintegrating security into development processes, and driving innovation\nthrough advanced tools and frameworks. Proven track record of spearheading\ncomplex projects, resolving critical vulnerabilities, and contributing to\norganizational success through technical insight and effective\ncollaboration.",
+    "location": {
+      "address": "",
+      "postalCode": "NY 10022",
+      "city": "New York",
+      "countryCode": "US",
+      "region": "New York"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "nonsleepr",
+        "url": "https://www.twitter.com/nonsleepr"
+      },
+      {
+        "network": "GitHub",
+        "username": "nonsleepr",
+        "url": "https://github.com/nonsleepr"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "Vulnerability Research",
+      "highlights": [
+        "Identified a dependency on a vulnerable library (CVE-2022-41912) within Grafana, demonstrated an authentication bypass within the product. Reported the finding to the vendor, enabling a critical security update.",
+        "Identified and reported critical authentication bypass vulnerability in Pomerium access proxy (CVE-2023-33189).",
+        "Escalated Squid proxy DoS (Denial of Service) vulnerability (CVE-2023-46847) to RCE (Remote Code Execution) during the red team engagement. Contributed to the fix of the vulnerability."
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "Bloomberg L.P.",
+      "location": "731 Lexington Ave., New York, NY 10022",
+      "description": "A financial, software, data, and media company",
+      "position": "Security Engineer",
+      "url": "https://www.bloomberg.com",
+      "startDate": "2021-05-01",
+      "summary": "As an internal red team operator, I conducted covert and overt adversary\nemulation to identify security risks, report them and work with security\nand engineering groups to remediate the vulnerabilities and improve\noveral security posture of the company.",
+      "highlights": [
+        "Led the initiative to integrate secret detection tools across engineering teams, enhancing secure development practices and strengthening the organization’s security posture.",
+        "Transitioned from a hands-on engineering role to security leadership, quickly mastering advanced security testing methodologies and mentoring teams on best practices.",
+        "Collaborated with engineering and security teams to implement scalable solutions for identified vulnerabilities, including custom proof-of-concept tools and automated scanners for critical vulnerabilities in open-source libraries.",
+        "Developed and optimized tools, scripts, and infrastructure to automate complex tasks, significantly improving team efficiency and scalability.",
+        "Spearheaded the development of custom offensive and defensive tooling, including ICMP and RDP proxies, while enabling secure and efficient lateral movement in restrictive network environments.",
+        "Conducted technical reviews and assessments for critical systems, uncovering high-value vulnerabilities and influencing design improvements for internal and third-party applications.",
+        "Delivered impactful technical presentations to audiences of over 100 engineers, fostering cross-functional collaboration and promoting secure development practices.",
+        "Achieved impactful outcomes in vulnerability research, including identifying high-impact flaws in authentication mechanisms and cloud infrastructure misconfigurations, influencing product security improvements.",
+        "Executed and led complex engagements, including penetration tests and red team simulations, aligning findings with engineering priorities to drive infrastructure and application enhancements.",
+        "Collaborated with cross-functional teams, including Threat and Vulnerability Management (TVM) and Cyber Security Operations Center (CSOC), to resolve security incidents and establish long-term remediation strategies.",
+        "Championed knowledge-sharing initiatives, mentoring teammates on security tools and methodologies, and cultivating a culture of continuous learning and improvement."
+      ]
+    },
+    {
+      "name": "Bloomberg L.P.",
+      "location": "731 Lexington Ave., New York, NY 10022",
+      "description": "A financial, software, data, and media company",
+      "position": "Big Data Engineer",
+      "url": "https://www.bloomberg.com",
+      "startDate": "2016-10-10",
+      "endDate": "2021-05-01",
+      "highlights": [
+        "Pioneered the adoption of Delta Lake for distributed tracing systems, leading evaluation, strategy definition, and deployment to improve scalability and enable advanced features.",
+        "Successfully migrated large-scale big data applications from Hive to Delta Lake storage, optimizing architecture, cluster resource usage, and query capabilities.",
+        "Designed and implemented a critical monitoring service, replacing legacy systems and enhancing 24/7 reliability for Spark Streaming jobs.",
+        "Onboarded and mentored new team members, fostering their growth into independent contributors within a year and significantly improving team efficiency.",
+        "Delivered technical talks on Spark Streaming at internal meetups and cross-functional distributed systems groups, sharing expertise and driving collaboration across teams.",
+        "Developed and maintained an internal Python HBase client library, streamlining workflows and enabling flexible integrations for HBase projects.",
+        "Collaborated with the internal Hadoop team managing large-scale infrastructure to implement Spark 3, achieving significant performance improvements with Delta storage.",
+        "Enhanced the stability and performance of critical systems, implementing automated application restarts, resolving upstream code issues, and exceeding performance benchmarks.",
+        "Increased the scalability and reliability of big data applications, ensuring robust support for future growth.",
+        "Successfully delivered multiple high-impact projects, including Delta Lake Proof of Concept, on schedule and beyond expectations."
+      ]
+    },
+    {
+      "name": "An IoT Company",
+      "position": "Penetration Tester",
+      "startDate": "2020-05-01",
+      "endDate": "2021-05-01",
+      "highlights": [
+        "Conducted black-box penetration testing on web and mobile applications, identifying and reporting critical vulnerabilities, coordinating with development teams to implement effective mitigations for identified issues.",
+        "Performed in-depth reverse engineering of IoT device firmware and proprietary UDP-based protocols, uncovering attack vectors and enabling the development of security measures against potential exploits.",
+        "Captured and analyzed Bluetooth traffic to evaluate wireless communication security, discovering and mitigating vulnerabilities in device connectivity.",
+        "Led monthly security education sessions for employees on diverse information security topics, improving security awareness across the organization.",
+        "Developed a strategy for a bug bounty program to streamline vulnerability reporting and remediation, enhancing the organization's proactive security measures."
+      ]
+    },
+    {
+      "name": "Credit Suisse",
+      "description": "Consultant via Syntel",
+      "position": "Data Scientist/Data Engineer",
+      "url": "https://www.credit-suisse.com/",
+      "startDate": "2015-04-01",
+      "endDate": "2016-10-07",
+      "highlights": [
+        "Developed forecasting models for time-series data and led the creation of an HBase-based graph database.",
+        "Implemented entity resolution algorithms using Apache Spark GraphX and developed streaming graph visualization web apps.",
+        "Created R and Python packages to assist data analysts and deployed external data acquisition pipelines."
+      ]
+    },
+    {
+      "name": "EXL Service",
+      "position": "Manager, Decision Analytics",
+      "url": "https://www.exlservice.com/",
+      "startDate": "2014-07-21",
+      "endDate": "2015-04-01",
+      "highlights": [
+        "Developed complex analytic applications for Return on Advertising Spend using advanced data analytics tools, R, and Tableau.",
+        "Implemented a report generation framework and performed text-mining on insurance claims data."
+      ]
+    },
+    {
+      "name": "Teradata",
+      "position": "Advanced Analytics Consultant",
+      "description": "Professional Services Consultant",
+      "url": "https://www.teradata.com/",
+      "startDate": "2011-07-01",
+      "endDate": "2014-07-18",
+      "highlights": [
+        "Served as a technical presales consultant for Teradata data analytics solutions.",
+        "Implemented Proof-of-Concept solutions for various customers, including market basket analysis and text mining for credit scoring.",
+        "Revived and updated Teradata's in-database analytical solution (teradataR)."
+      ]
+    },
+    {
+      "name": "Accenture",
+      "position": "Senior System Analyst",
+      "url": "https://www.accenture.com/",
+      "startDate": "2007-02-01",
+      "endDate": "2011-06-01",
+      "highlights": [
+        "Led a team of five developers in implementing a new banking system for Intesa Sanpaolo, Russia.",
+        "Optimized system performance through query optimization and database tuning.",
+        "Designed frameworks to integrate the banking system with WebSphere MQ, improving code base unification."
+      ]
+    },
+    {
+      "name": "Rosbank (Societe Generale Group)",
+      "position": "Programmer",
+      "url": "https://www.rosbank.ru/en/",
+      "startDate": "2005-11-01",
+      "endDate": "2007-01-01",
+      "highlights": [
+        "Developed C applications for the Mysis Equation core banking system."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Moscow Power Engineering Institute",
+      "url": "https://mpei.ru/lang/en/",
+      "area": "Electronic Systems",
+      "studyType": "Master of Science",
+      "startDate": "2000-09-01",
+      "endDate": "2006-06-30"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Offensive Security",
+      "level": "Master",
+      "keywords": [
+        "Network Penetration Testing",
+        "Active Directory Exploitation",
+        "Cloud Security Assessment (AWS)",
+        "Web Application Security",
+        "Custom Exploit Development",
+        "Red Team Operations",
+        "Social Engineering"
+      ]
+    },
+    {
+      "name": "Security Tools",
+      "level": "Master",
+      "keywords": [
+        "Burp Suite",
+        "PowerShell Empire",
+        "Bloodhound",
+        "Responder",
+        "Nmap",
+        "Wireshark"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "Master",
+      "keywords": [
+        "Python",
+        "Go",
+        "PowerShell",
+        "Scala",
+        "SQL",
+        "C/C++"
+      ]
+    },
+    {
+      "name": "Infrastructure & Cloud",
+      "level": "Master",
+      "keywords": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "Data Engineering",
+      "level": "Master",
+      "keywords": [
+        "Apache Spark",
+        "Hadoop",
+        "HBase",
+        "Kafka",
+        "Delta Lake",
+        "MongoDB",
+        "Neo4j"
+      ]
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2017-12-24T15:53:00",
+    "theme": "jsonresume-theme-even"
+  }
+}

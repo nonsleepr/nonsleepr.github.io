@@ -1,0 +1,17 @@
+{{- $icons := dict
+  "note" "ⓘ"
+  "tip" "☀"
+  "important" "‼"
+  "warning" "⚠"
+  "caution" "⛔"
+-}}
+{{- if eq .Type "alert" }}
+<div class="markdown-alert markdown-alert-{{ .AlertType }}">
+  <p class="markdown-alert-title"><span class="markdown-alert-icon">{{ index $icons .AlertType }}</span>{{ with .AlertTitle }}{{ . }}{{ else }}{{ title .AlertType }}{{ end }}</p>
+  {{ .Text }}
+</div>
+{{- else }}
+<blockquote>
+  {{ .Text }}
+</blockquote>
+{{- end }}

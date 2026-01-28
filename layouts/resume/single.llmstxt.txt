@@ -1,0 +1,85 @@
+{{- $variant := .Params.variant | default site.Params.resume.defaultVariant -}}
+{{- $resume := index site.Data.resumes $variant -}}
+{{- if not $resume -}}
+ERROR: Resume variant "{{ $variant }}" not found in data/resumes/
+{{- else -}}
+# {{ $resume.basics.name }}
+{{ with $resume.basics.label }}
+{{ . }}
+{{ end }}
+## Contact
+{{ with $resume.basics.email }}
+Email: [{{ . }}](mailto:{{ . }})
+{{ end }}
+{{- with $resume.basics.phone }}
+Phone: {{ . }}
+{{ end }}
+{{- with $resume.basics.url }}
+Website: {{ . }}
+{{ end }}
+{{- with $resume.basics.location }}
+{{- with .city }}
+City: {{ . }}
+{{ end }}
+{{- with .region }}
+Region: {{ . }}
+{{ end }}
+{{- with .countryCode }}
+Country: {{ . }}
+{{ end }}
+{{- end }}
+{{ with $resume.basics.profiles }}
+## Profiles
+{{ range . }}
+- [{{ .network }} - {{ .username }}]({{ .url }})
+{{- end }}
+{{ end }}
+{{ with $resume.basics.summary }}
+## Summary
+
+{{ . }}
+{{ end }}
+{{ with $resume.work }}
+## Work Experience
+{{ range . }}
+### {{ .position }}{{ with .name }} at {{ . }}{{ end }}
+{{ .startDate }}{{ with .endDate }} - {{ . }}{{ end }}
+{{ with .summary }}
+{{ . }}
+{{ end }}
+{{ with .highlights }}
+{{ range . }}
+- {{ . }}
+{{- end }}
+{{ end }}
+{{ end }}
+{{- end }}
+{{ with $resume.projects }}
+## Projects
+{{ range . }}
+### {{ .name }}
+{{ with .description }}
+{{ . }}
+{{ end }}
+{{ with .highlights }}
+{{ range . }}
+- {{ . }}
+{{- end }}
+{{ end }}
+{{ end }}
+{{- end }}
+{{ with $resume.education }}
+## Education
+{{ range . }}
+### {{ .institution }}
+{{ .studyType }} in {{ .area }}
+{{ .startDate }}{{ with .endDate }} - {{ . }}{{ end }}
+{{ end }}
+{{- end }}
+{{ with $resume.skills }}
+## Skills
+{{ range . }}
+- **{{ .name }}**: {{ delimit .keywords ", " }}
+{{- end }}
+{{ end }}
+{{- end -}}
