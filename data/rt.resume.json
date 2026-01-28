@@ -50,6 +50,7 @@
         "Executed advanced Active Directory attacks including Kerberoasting and AD Certificate Services exploitation, achieving domain-level compromise in complex environments.",
         "Performed vulnerability research on third-party software and critical infrastructure, discovering high-impact vulnerabilities in email security systems, authentication mechanisms, and proxy services.",
         "Led successful phishing and MitM campaigns.",
+        "Integrated AI and agentic workflows into red team operations, leveraging AI agents and MCP tools to enhance reconnaissance, automate repetitive tasks, and accelerate PoC development.",
         "Researched, developed, and integrated automation tools to streamline Red Team operations, significantly improving assessment efficiency and reporting processes.",
         "Presented technical findings to engineering audiences of over 100, enhancing security awareness and promoting best practices across the organization.",
         "Led the initiative to adopt secret detection tools across product teams, strengthening secret management practices and overall security posture.",
