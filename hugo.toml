@@ -1,12 +1,12 @@
 baseURL = "https://nonsleepr.github.io/"
 languageCode = "en-us"
-title = "nonsleepr"
+title = "Nonsleepr's Blog"
 theme = "solar"
 
 # Solarized color scheme: "light", "dark", "gray", or "preference" (auto-switches based on system)
 [params]
   scheme = "preference"
-  description = "Blog and Resume"
+  description = "Engineering, security, AI, and too much coffee"
 
 # Markdown settings
 [markup]
