@@ -2,6 +2,7 @@ baseURL = "https://nonsleepr.github.io/"
 languageCode = "en-us"
 title = "Nonsleepr's Blog"
 theme = "solar"
+ignoreFiles = ["data/node_modules"]
 
 # Solarized color scheme: "light", "dark", "gray", or "preference" (auto-switches based on system)
 [params]
