@@ -126,11 +126,6 @@ work:
     highlights:
       - Developed C applications for the Mysis Equation core banking system.
 projects:
-  - name: AI Security Research
-    highlights:
-      - Exploited AI agent tool abuse vulnerability by discovering undocumented dev/test parameters in exposed tool inventory, achieving SSRF to internal services chained to critical-severity remote code execution.
-      - Identified SQL injection in LLM gateway API's model selection parameter leading to backend database compromise and API key exfiltration.
-      - Built custom AI agent framework with tool routing, persistent memory, MCP (Model Context Protocol) and ACP (Agent-Client Protocol) integration, and telemetry for offensive security automation.
   - name: Vulnerability Research
     highlights:
       - Identified a dependency on a vulnerable library (CVE-2022-41912) within Grafana, demonstrated an authentication bypass within the product. Reported the finding to the vendor, enabling a critical security update.
