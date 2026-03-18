@@ -14,6 +14,10 @@ package-lock.json
 # SSG PoC (development only)
 ssg-poc/
 
+# Generated resume files (converted from YAML during build)
+static/data/*.resume.json
+data/*.resume.json
+
 # OS
 .DS_Store
 Thumbs.db

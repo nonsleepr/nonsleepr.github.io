@@ -31,6 +31,14 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+      - name: Convert resume YAML to JSON
+        uses: mikefarah/yq@master
+        with:
+          cmd: |
+            mkdir -p static/data
+            yq eval -o=json data/resumes/rt.yaml > static/data/rt.resume.json
+            yq eval -o=json data/resumes/se.yaml > static/data/se.resume.json
+            cp static/data/rt.resume.json static/data/default.resume.json
       - name: Cache restore
         id: cache-restore
         uses: actions/cache/restore@v5
