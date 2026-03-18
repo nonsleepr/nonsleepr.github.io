@@ -1,7 +1,7 @@
 $schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
 basics:
   name: Alexander Bason
-  label: Red Team Operator
+  label: Red Team Operator | Offensive Security Engineer | Vulnerability Researcher
   image: "https://avatars.githubusercontent.com/u/2337602"
   email: "alexander.bason+rt-resume@35.yt"
   phone: (530) 675-4199
@@ -37,27 +37,26 @@ work:
     startDate: "2022-09-01"
     summary: |-
       As an internal red team operator, I conducted covert and overt adversary
-      emulation to identify security risks, report them and work with security
-      and engineering groups to remediate the vulnerabilities and improve
-      overal security posture of the company.
+      emulation and security assessments of AI-driven applications to identify
+      security risks, report them and work with security and engineering groups
+      to remediate the vulnerabilities and improve overall security posture of
+      the company.
     highlights:
-      - Conducted comprehensive red team engagements, simulating advanced persistent threats (APTs) to assess and improve Bloomberg's infrastructure and application security posture.
-      - Achieved critical impact in assessments by exploiting deserialization vulnerabilities, misconfigurations, command injection vulnerabilities, etc., leading to full compromise of high-value assets and network pivoting across isolated segments.
-      - Successfully compromised AWS EKS clusters through misconfigured IAM policies and leveraged command injection vulnerabilities during Docker image builds to achieve full cluster compromise, demonstrating advanced cloud and container security penetration testing skills.
-      - Performed advanced mobile application reverse engineering on obfuscated Android applications and iOS app decompilation, successfully identifying hardcoded GitHub API keys and discovering mobile-specific API endpoints for security assessment.
-      - Utilized Frida framework for dynamic analysis, certificate pinning bypass, and runtime manipulation of mobile applications, enabling comprehensive security testing of protected applications.
-      - Executed mobile security assessments on rooted Android devices and jailbroken iOS devices with Frida server deployment and Magisk extensions to evade anti-emulator protections and root detection mechanisms.
-      - Successfully bypassed certificate pinning and anti-emulator protections using specialized mobile security toolchains and discovered hardcoded API credentials through systematic mobile application analysis.
-      - Developed custom offensive tooling leveraging software engineering expertise to create ICMP and RDP proxies that navigate restrictive network environments and enhance lateral movement capabilities during assessments.
-      - Applied two decades of software engineering experience to identify architecture-level vulnerabilities often missed by traditional security testing approaches.
-      - Executed advanced Active Directory attacks including Kerberoasting and AD Certificate Services exploitation, achieving domain-level compromise in complex environments.
-      - Performed vulnerability research on third-party software and critical infrastructure, discovering high-impact vulnerabilities in email security systems, authentication mechanisms, and proxy services.
-      - Led successful phishing and MitM campaigns.
-      - Researched, developed, and integrated automation tools to streamline Red Team operations, significantly improving assessment efficiency and reporting processes.
-      - Presented technical findings to engineering audiences of over 100, enhancing security awareness and promoting best practices across the organization.
-      - Led the initiative to adopt secret detection tools across product teams, strengthening secret management practices and overall security posture.
-      - Collaborated with TVM and CSOC teams to address security incidents and implement remediation strategies for identified vulnerabilities.
-      - Implemented proof-of-concepts and scanners for critical vulnerabilities in open-source libraries, collaborated with security and engineering teams to promptly remediate the issues.
+      - Conducted 6-10 annual red team and penetration testing engagements, simulating APTs (MITRE ATT&CK) against AI systems, cloud infrastructure, and enterprise applications.
+      - Achieved full compromise of high-value assets by exploiting complex deserialization, misconfigurations, and command injection vulnerabilities to pivot across isolated network segments.
+      - Compromised AWS EKS clusters via IAM policy exploitation and command injection during Docker builds, demonstrating advanced container security proficiency.
+      - Identified critical SSRF and RCE vulnerabilities in AI agent applications by uncovering undocumented dev parameters and chaining exploits to compromise internal services.
+      - Secured LLM gateway APIs by discovering SQL injection in model selection parameters, preventing backend database access and API key exfiltration.
+      - Executed AI jailbreak testing to bypass safety guardrails, providing empirical risk assessments for real-world AI system deployments.
+      - Expanded attack-surface coverage and reduced overhead by 25% through the development of AI-assisted reconnaissance and reporting automation.
+      - Achieved Domain Administrator privileges in complex environments by exploiting Active Directory Certificate Services (ADCS) and Kerberoasting.
+      - Reverse-engineered obfuscated Android/iOS applications using Frida and Magisk; bypassed certificate pinning and root detection to expose hardcoded credentials.
+      - Developed custom offensive tooling, including ICMP and RDP proxies, to facilitate lateral movement within highly restrictive network environments.
+      - Discovered high-impact vulnerabilities in third-party email security and authentication systems through dedicated vulnerability research.
+      - Orchestrated full-scope social engineering, leading successful phishing and MitM campaigns to test organizational resilience.
+      - Scaled security culture by presenting technical findings to audiences of 100+ and designing internal CTF events with comprehensive debriefs.
+      - Led organizational secret detection initiative, significantly reducing credential exposure across product teams and strengthening security posture.
+      - Collaborated with TVM and CSOC teams to develop scanners and PoCs for critical open-source vulnerabilities, ensuring rapid remediation.
   - name: Bloomberg L.P.
     location: 731 Lexington Ave., New York, NY 10022
     description: A financial, software, data, and media company
@@ -146,6 +145,11 @@ work:
     highlights:
       - Developed C applications for the Mysis Equation core banking system.
 projects:
+  - name: AI Security Research
+    highlights:
+      - Exploited AI agent tool abuse vulnerability by discovering undocumented dev/test parameters in exposed tool inventory, achieving SSRF to internal services chained to critical-severity remote code execution.
+      - Identified SQL injection in LLM gateway API's model selection parameter leading to backend database compromise and API key exfiltration.
+      - Built custom AI agent framework with tool routing, persistent memory, MCP (Model Context Protocol) and ACP (Agent-Client Protocol) integration, and telemetry for offensive security automation.
   - name: Vulnerability Research
     highlights:
       - Identified a dependency on a vulnerable library (CVE-2022-41912) within Grafana, demonstrated an authentication bypass within the product. Reported the finding to the vendor, enabling a critical security update.
@@ -154,6 +158,7 @@ projects:
   - name: Custom Offensive Tooling
     highlights:
       - Developed ICMP and RDP proxy tools to enable lateral movement through restrictive network environments during red team assessments.
+      - Developed AI-powered offensive automation agents using MCP/ACP protocols for reconnaissance, code review assistance, exploit development, and reporting workflows.
       - Created automation frameworks to streamline red team operations, improving assessment efficiency and standardizing reporting processes.
       - Built custom scanners and proof-of-concept exploits for critical vulnerabilities in open-source libraries, enabling rapid security response across engineering teams.
 education:
@@ -178,6 +183,14 @@ skills:
       - Custom Exploit Development
       - Red Team Operations
       - Social Engineering
+  - name: AI/LLM Security
+    level: Master
+    keywords:
+      - Prompt Injection
+      - AI Jailbreak Testing
+      - LLM Security Assessment
+      - AI Agent Security
+      - AI Tool Exploitation
   - name: Security Tools
     level: Master
     keywords:
@@ -200,6 +213,13 @@ skills:
       - Scala
       - SQL
       - C/C++
+  - name: AI Tools & Automation
+    level: Master
+    keywords:
+      - AI Agent Development
+      - MCP (Model Context Protocol)
+      - ACP (Agent-Client Protocol)
+      - AI Workflow Automation
   - name: Infrastructure & Cloud
     level: Master
     keywords:
