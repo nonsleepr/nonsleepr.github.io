@@ -32,15 +32,9 @@ work:
   - name: Bloomberg L.P.
     location: 731 Lexington Ave., New York, NY 10022
     description: A financial, software, data, and media company
-    position: Red Team Operator
+    position: Red Team Operator & Security Engineer
     url: https://www.bloomberg.com
-    startDate: "2022-09-01"
-    summary: |-
-      As an internal red team operator, I conducted covert and overt adversary
-      emulation and security assessments of AI-driven applications to identify
-      security risks, report them and work with security and engineering groups
-      to remediate the vulnerabilities and improve overall security posture of
-      the company.
+    startDate: "2021-05-01"
     highlights:
       - Conducted 6-10 annual red team and penetration testing engagements, simulating APTs (MITRE ATT&CK) against AI systems, cloud infrastructure, and enterprise applications.
       - Achieved full compromise of high-value assets by exploiting complex deserialization, misconfigurations, and command injection vulnerabilities to pivot across isolated network segments.
@@ -57,21 +51,8 @@ work:
       - Scaled security culture by presenting technical findings to audiences of 100+ and designing internal CTF events with comprehensive debriefs.
       - Led organizational secret detection initiative, significantly reducing credential exposure across product teams and strengthening security posture.
       - Collaborated with TVM and CSOC teams to develop scanners and PoCs for critical open-source vulnerabilities, ensuring rapid remediation.
-  - name: Bloomberg L.P.
-    location: 731 Lexington Ave., New York, NY 10022
-    description: A financial, software, data, and media company
-    position: Penetration Tester
-    url: https://www.bloomberg.com
-    startDate: "2021-05-01"
-    endDate: "2022-09-01"
-    highlights:
-      - Transitioned from an engineering role, quickly adapting to security testing methodologies and demonstrating a keen eye for identifying vulnerabilities.
-      - Performed security reviews of internal systems and third-party applications, uncovering critical vulnerabilities.
-      - Utilized both black-box and white-box testing techniques, demonstrating proficiency in a variety of assessment methodologies.
-      - Developed tools and scripts to automate tasks and gather information.
-      - Built tools and set up infrastructure to improve security review efficiency.
-      - Shared knowledge of security tools and techniques with teammates, improving team efficiency.
-      - Conducted black-box penetration testing of third-party products, quickly identifying a critical pre-authentication vulnerability overlooked in prior assessments, highlighting the need for deeper pre-auth security analysis.
+      - Identified a critical pre-authentication vulnerability in a third-party product during black-box testing that had been overlooked in multiple prior assessments.
+      - Engineered custom automation scripts and infrastructure that modernized internal security review workflows and increased testing velocity.
   - name: Bloomberg L.P.
     location: 731 Lexington Ave., New York, NY 10022
     description: A financial, software, data, and media company
