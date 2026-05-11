@@ -41,6 +41,7 @@ ignoreFiles = ["data/node_modules"]
 
 # Enable llmstxt output for resume section
 [outputs]
+  home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
 
 # Resume pages output both HTML redirect and llms.txt

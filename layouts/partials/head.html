@@ -1,3 +1,6 @@
 {{ $custom := resources.Get "css/custom.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $custom.RelPermalink }}">
+{{ with .OutputFormats.Get "rss" }}
+  {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end }}
 <script data-goatcounter="https://nonsleepr.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
