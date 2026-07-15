@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander Bason - Resume</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #444;
+    --rule: #1a1a1a;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.28;
+    color: var(--text);
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.5in;
+    background: #fff;
+  }
+
+  h1, h2, h3 { margin: 0; padding: 0; font-weight: bold; }
+
+  header { text-align: center; margin-bottom: 8px; }
+
+  header h1 { font-size: 18pt; letter-spacing: 0.3px; }
+
+  header .label {
+    font-size: 11pt;
+    margin-top: 2px;
+  }
+
+  header .contact {
+    font-size: 9.5pt;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  header .contact a { color: var(--muted); text-decoration: none; }
+
+  section { margin-top: 7px; }
+
+  h2.section-title {
+    font-size: 11pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1.5px solid var(--rule);
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+  }
+
+  p.summary { margin: 0; text-align: justify; }
+
+  .job { margin-bottom: 5px; }
+  .job:last-child { margin-bottom: 0; }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 10.5pt;
+  }
+
+  .job-header .title-line strong { font-weight: bold; }
+  .job-header .dates { font-style: italic; color: var(--muted); white-space: nowrap; }
+
+  ul.bullets {
+    margin: 3px 0 0 0;
+    padding-left: 16px;
+  }
+
+  ul.bullets li {
+    margin-bottom: 1px;
+  }
+
+  .earlier-career {
+    margin-top: 4px;
+    font-size: 10pt;
+  }
+
+  .earlier-career strong { font-weight: bold; }
+
+  table.skills {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+  }
+
+  table.skills td {
+    padding: 1.5px 0;
+    vertical-align: top;
+  }
+
+  table.skills td.skill-label {
+    font-weight: bold;
+    width: 1.9in;
+    white-space: nowrap;
+    padding-right: 8px;
+  }
+
+  .education-line {
+    font-size: 10.5pt;
+  }
+
+  #print-button {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: #268bd2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-size: 10pt;
+    cursor: pointer;
+  }
+
+  @media print {
+    #print-button { display: none; }
+    body { padding: 0; max-width: none; }
+    @page { margin: 0.5in; }
+  }
+</style>
+</head>
+<body>
+
+<button id="print-button" onclick="window.print()">Print / Save as PDF</button>
+
+<header>
+  <h1>Alexander Bason</h1>
+  <div class="label">Staff Software Engineer &mdash; Distributed Systems, Security &amp; AI Agents</div>
+  <div class="contact">
+    New York, NY &nbsp;|&nbsp; (530) 675-4199 &nbsp;|&nbsp;
+    <a href="mailto:alexander.bason+se-resume@35.yt">alexander.bason+se-resume@35.yt</a> &nbsp;|&nbsp;
+    <a href="https://nonsleepr.github.io/">nonsleepr.github.io</a> &nbsp;|&nbsp;
+    <a href="https://github.com/nonsleepr">github.com/nonsleepr</a>
+  </div>
+</header>
+
+<section>
+  <h2 class="section-title">Summary</h2>
+  <p class="summary">
+    Software engineer with nearly two decades spanning software, big-data, and distributed-systems
+    engineering, plus offensive security, including hands-on technical leadership. Builds security
+    tooling and AI-agent systems, conducts offensive security research, and drives secure-by-default
+    practices &mdash; from a secret-detection pilot that grew to company-wide adoption, to org-wide
+    proxy and SSO/IdP changes driven by red team findings.
+  </p>
+</section>
+
+<section>
+  <h2 class="section-title">Experience</h2>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="title-line"><strong>Bloomberg L.P.</strong> &mdash; Security Engineer, New York, NY</span>
+      <span class="dates">May 2021 &ndash; Present</span>
+    </div>
+    <ul class="bullets">
+      <li>Authoring the RFC for a security AI-agent harness: automated threat-model generation, orchestrated code-review agents with schema-defined findings, and automated triage/deduplication/validation with built-in observability.</li>
+      <li>Built AI-powered automation agents (MCP/ACP) for reconnaissance, code review, exploit development, and reporting; gained hands-on insight into agent identity and trust-boundary design.</li>
+      <li>Spearheaded a secret-detection pilot (~24 repositories, 30&ndash;40 engineers) later adopted company-wide across thousands of repositories.</li>
+      <li>Drove org-wide proxy policy, SSO/IdP secure defaults, and mTLS enforcement from red team findings, including demonstrated SAML/OAuth authentication abuses.</li>
+      <li>Identified critical SSRF/RCE in AI agent applications and SQL injection in an internal LLM gateway; ran AI jailbreak, prompt-injection, and RAG exploit assessments that shaped AI deployment decisions.</li>
+      <li>Run 6&ndash;10 annual red team and penetration testing engagements (MITRE ATT&amp;CK) against AI systems, cloud infrastructure, and enterprise applications; discovered zero-days enabling full MDM compromise and AWS EKS cluster compromise.</li>
+      <li>Published 3 CVEs from independent vulnerability research (Grafana, Pomerium, Squid); authored an ARM-support fork of Volatility3 later adopted by an external incident-response vendor.</li>
+      <li>Mentor security and software engineers, present to audiences of 100+ engineers, and run internal CTF events.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-header">
+      <span class="title-line"><strong>Bloomberg L.P.</strong> &mdash; Big Data Engineer, New York, NY</span>
+      <span class="dates">Oct 2016 &ndash; May 2021</span>
+    </div>
+    <ul class="bullets">
+      <li>Led adoption of Delta Lake for distributed tracing systems, migrating large-scale Hive workloads and improving scalability.</li>
+      <li>Designed a monitoring service for Spark Streaming jobs, replacing legacy systems and improving 24/7 reliability.</li>
+      <li>Mentored new engineers into independent contributors within a year; delivered internal talks on Spark Streaming and distributed systems.</li>
+    </ul>
+  </div>
+
+  <div class="earlier-career">
+    <strong>Earlier Career (2005&ndash;2016):</strong> Penetration Tester, IoT company &middot;
+    Data Scientist/Data Engineer, Credit Suisse &middot;
+    Manager, Decision Analytics, EXL Service &middot;
+    Advanced Analytics Consultant, Teradata &middot;
+    Senior System Analyst, Accenture &middot;
+    Programmer, Rosbank (Societe Generale Group)
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Skills</h2>
+  <table class="skills">
+    <tr><td class="skill-label">AI/Agent Security</td><td>AI agent development, MCP, ACP, prompt injection, AI jailbreak/guardrail bypass, RAG security, agent identity &amp; trust boundaries</td></tr>
+    <tr><td class="skill-label">Identity &amp; Access</td><td>OAuth 2.0/OIDC, SAML/SSO, mTLS/PKI, secrets management</td></tr>
+    <tr><td class="skill-label">Languages &amp; Infrastructure</td><td>Python, Go, Scala, SQL, C/C++, AWS, Docker, Kubernetes, CI/CD</td></tr>
+    <tr><td class="skill-label">Distributed Systems &amp; Data</td><td>Apache Spark, Hadoop, HBase, Kafka, Delta Lake, MongoDB, Neo4j</td></tr>
+    <tr><td class="skill-label">Offensive Security</td><td>Red team operations, Active Directory exploitation, cloud &amp; container security, web/API security, memory forensics, custom exploit development</td></tr>
+    <tr><td class="skill-label">Security Tools</td><td>Burp Suite, BloodHound, Nmap, Wireshark, PowerShell Empire, Responder</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2 class="section-title">Education</h2>
+  <div class="education-line">M.S., Electronic Systems &mdash; Moscow Power Engineering Institute, 2006</div>
+</section>
+
+</body>
+</html>

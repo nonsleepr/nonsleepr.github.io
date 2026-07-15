@@ -3,6 +3,10 @@ const config = {
     showSkillCategories: false // Set to true to show skill categories
 };
 
+// Currently displayed resume variant (set in fetchResumeData). Used by the
+// "One-page PDF" button to open the matching one-pager.
+let currentVariant = 'default';
+
 // DOM Elements
 const loadingEl = document.getElementById('loading');
 const errorEl = document.getElementById('error');
@@ -16,9 +20,17 @@ const workSectionEl = document.getElementById('work-section');
 const projectsSectionEl = document.getElementById('projects-section');
 const awardsSectionEl = document.getElementById('awards-section');
 
-// Print function
+// Print function (prints the full interactive resume as displayed)
 document.getElementById('print-button').addEventListener('click', () => {
     window.print();
+});
+
+// One-page PDF: open the generated recruiter one-pager for the current variant
+// and auto-open its print dialog. Only 'se' and 'rt' one-pagers exist; the
+// default (no hash) variant maps to 'rt'.
+document.getElementById('onepage-button').addEventListener('click', () => {
+    const onepageVariant = currentVariant === 'se' ? 'se' : 'rt';
+    window.open(`onepage.html?print=1#${onepageVariant}`, '_blank');
 });
 
 // Utility functions from formatters.js
@@ -519,6 +531,7 @@ async function fetchResumeData() {
                 variant = hash.substring(1); // Remove the # symbol
             }
         }
+        currentVariant = variant;
         const resumeFile = `../data/${variant}.resume.json`;
         
         console.log(`Loading resume from: ${resumeFile}`);

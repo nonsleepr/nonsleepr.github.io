@@ -38,6 +38,8 @@ jobs:
             mkdir -p static/data
             yq eval -o=json data/resumes/rt.yaml > static/data/rt.resume.json
             yq eval -o=json data/resumes/se.yaml > static/data/se.resume.json
+            yq eval -o=json data/resumes/onepage-rt.yaml > static/data/onepage-rt.resume.json
+            yq eval -o=json data/resumes/onepage-se.yaml > static/data/onepage-se.resume.json
             cp static/data/rt.resume.json static/data/default.resume.json
       - name: Cache restore
         id: cache-restore

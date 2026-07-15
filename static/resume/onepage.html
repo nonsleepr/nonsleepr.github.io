@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alexander Bason - Resume</title>
+<style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #444;
+    --rule: #1a1a1a;
+    --accent: #268bd2;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.2;
+    color: var(--text);
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 0.5in;
+    background: #fff;
+  }
+
+  h1, h2, h3 { margin: 0; padding: 0; font-weight: bold; }
+
+  header { text-align: center; margin-bottom: 8px; }
+
+  header h1 { font-size: 18pt; letter-spacing: 0.3px; }
+
+  header .label {
+    font-size: 11pt;
+    margin-top: 2px;
+  }
+
+  header .contact {
+    font-size: 9.5pt;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  header .contact a { color: var(--muted); text-decoration: none; }
+
+  header .contact a.online-link { color: var(--accent); font-weight: bold; }
+
+  section { margin-top: 4px; }
+
+  h2.section-title {
+    font-size: 11pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1.5px solid var(--rule);
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+  }
+
+  p.summary { margin: 0; text-align: justify; }
+
+  .job { margin-bottom: 3px; }
+  .job:last-child { margin-bottom: 0; }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 10.5pt;
+  }
+
+  .job-header .title-line strong { font-weight: bold; }
+  .job-header .dates { font-style: italic; color: var(--muted); white-space: nowrap; }
+
+  ul.bullets {
+    margin: 2px 0 0 0;
+    padding-left: 16px;
+  }
+
+  ul.bullets li {
+    margin-bottom: 0;
+  }
+
+  .earlier-career {
+    margin-top: 4px;
+    font-size: 10pt;
+  }
+
+  .earlier-career strong { font-weight: bold; }
+
+  table.skills {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+  }
+
+  table.skills td {
+    padding: 1.5px 0;
+    vertical-align: top;
+  }
+
+  table.skills td.skill-label {
+    font-weight: bold;
+    width: 1.9in;
+    white-space: nowrap;
+    padding-right: 8px;
+  }
+
+  .education-line {
+    font-size: 10.5pt;
+  }
+
+  #error {
+    color: #b00;
+    font-size: 11pt;
+    margin: 12px 0;
+  }
+
+  #print-button {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-size: 10pt;
+    cursor: pointer;
+  }
+
+  @media print {
+    #print-button { display: none; }
+    body { padding: 0; max-width: none; }
+    @page { margin: 0.5in; }
+  }
+</style>
+</head>
+<body>
+
+<button id="print-button" onclick="window.print()">Print / Save as PDF</button>
+
+<header>
+  <h1 id="name"></h1>
+  <div class="label" id="label"></div>
+  <div class="contact" id="contact"></div>
+</header>
+
+<div id="error" style="display: none;"></div>
+
+<section>
+  <h2 class="section-title">Summary</h2>
+  <p class="summary" id="summary"></p>
+</section>
+
+<section>
+  <h2 class="section-title">Experience</h2>
+  <div id="experience"></div>
+  <div class="earlier-career" id="earlier-career"></div>
+</section>
+
+<section>
+  <h2 class="section-title">Skills</h2>
+  <table class="skills"><tbody id="skills"></tbody></table>
+</section>
+
+<section>
+  <h2 class="section-title">Education</h2>
+  <div class="education-line" id="education"></div>
+</section>
+
+<script src="assets/js/onepage.js"></script>
+</body>
+</html>

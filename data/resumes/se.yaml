@@ -38,7 +38,7 @@ projects:
       - Developed guardrail-bypass and prompt-injection test methodologies for LLM applications, producing empirical risk assessments used to inform AI deployment decisions.
   - name: Systems & Security Tooling
     highlights:
-      - Authored an ARM-support fork of Volatility3 for memory forensics, subsequently adopted by an external incident-response vendor during a live engagement.
+      - Authored a fork of Volatility3 adding AArch64 and AArch32 memory-forensics support absent upstream; adopted by an external incident-response vendor during a live engagement.
       - Built custom BloodHound data transformers to ingest MDM/Jamf device and inventory data, extending attack-path analysis to endpoint-management infrastructure.
       - Developed ICMP and RDP proxy tools and custom scanners/PoC exploits for critical open-source library vulnerabilities, enabling rapid security response across engineering teams.
   - name: Vulnerability Research (Published CVEs)
@@ -60,16 +60,17 @@ work:
       infrastructure and standards adopted across the organization.
     highlights:
       # --- Building / AI agents / force-multiplier (staff signal) ---
-      - Authoring the specification/RFC for a security AI-agent harness that formalizes multi-agent data flows and agentic loops — threat-model generation against a standardized schema, an orchestrator dispatching parallel code-review agents that emit schema-defined pre-triage findings, and automated triage, deduplication, and validation — with observability built in.
+      - Authoring the RFC for a security AI-agent harness to help product security scale review capacity against AI-accelerated engineering output — formalizing threat-model generation against a standardized, open schema, an orchestrator dispatching parallel code-review agents with schema-defined pre-triage findings, and automated triage, deduplication, and validation with observability built in; praised internally for its rigor and its benchmarking against industry-leading agentic security frameworks.
       - Built AI-powered automation agents (MCP/ACP) for reconnaissance, code review, exploit development, and reporting, gaining first-hand insight into agent identity, tool-invocation, and trust-boundary design.
       - Spearheaded the pilot of a secret-detection initiative (~24 repositories, 30-40 engineers) that was subsequently adopted company-wide across thousands of repositories, establishing secure-by-default credential handling.
-      - Engineered custom automation and infrastructure that modernized internal security review workflows and increased testing velocity across the team.
-      - Built reusable scanners and proof-of-concept exploits with TVM and SOC teams for critical open-source vulnerabilities, enabling rapid, org-wide remediation.
+      - Built centralized infrastructure for security-review note-taking, replacing scattered manual notes with a single source of truth that sped up report generation and ticketing for the team.
+      - Automated recurring review and testing workflows, making previously manual, hours-long tasks reproducible in minutes and eliminating missed steps, increasing testing velocity across the team.
+      - Built a custom PoC and automated scanner for the Passport SAML authentication bypass (CVE-2022-39299) ahead of public exploit availability, enabling TVM and SOC teams to remediate ~100 affected applications org-wide within one week of disclosure.
       - Developed custom network tooling, including ICMP and RDP proxies, to enable secure and efficient traversal of restrictive network environments.
-      - Authored an ARM-support fork of Volatility3, subsequently adopted by an external incident-response vendor during a live engagement.
+      - Authored a fork of Volatility3 adding AArch64 and AArch32 support after the absence of ARM support blocked memory-forensics analysis of memory dumps from potentially compromised devices during a live incident; subsequently adopted by an external incident-response vendor, who credited the tool during a joint incident call.
       # --- Adversarial perspective applied to architecture & identity ---
-      - Drove changes to organization-wide proxy policies and SSO/IdP secure defaults as a direct result of red team findings.
-      - Prompted org-wide mTLS enforcement through red team findings and demonstrated SAML/OAuth authentication abuses that informed identity hardening.
+      - Discovered that SSO tokens were long-lived, overly permissive, and replayable — issued to service providers that didn't need that scope — and drove a resulting change to token-issuance defaults across hundreds of internal applications org-wide.
+      - Found that mTLS was not enforced on the identity-aware proxy (Pomerium, where a related authentication-bypass CVE I discovered enabled unauthenticated access to internal sensitive systems); communicated findings to engineering and architecture stakeholders, driving mTLS to become default-on across hundreds of applications behind the proxy.
       - Identified critical SSRF and RCE in AI agent applications and SQL injection in an internal LLM gateway, informing how agent-based products and gateway APIs were hardened before wider rollout.
       - Executed AI jailbreak and prompt-injection testing to bypass safety guardrails, translating findings into empirical risk assessments that shaped AI deployment decisions.
       - Assessed RAG-based AI applications, exploiting an over-permissioned retrieval tool's backend SQL access to force arbitrary file reads beyond its intended dataset scope.
@@ -81,8 +82,8 @@ work:
       - Achieved Domain Administrator privileges by exploiting Active Directory Certificate Services (ADCS) and Kerberoasting, and reverse-engineered obfuscated mobile applications (Frida/Magisk) to expose hardcoded credentials.
       - Identified a critical pre-authentication vulnerability in a third-party product during black-box testing that had been missed in multiple prior assessments.
       # --- Leadership & culture ---
-      - Mentored security and software engineers and led red team engagements several times per year, setting direction on offensive tooling and methodology.
-      - Presented technical findings to audiences of 100+ engineers and authored internal CTF events with full debriefs, scaling security capability across teams.
+      - Mentored a security intern through fuzzing an HTML sanitizer end-to-end — building the harness, sponsoring the effort, and ensuring they owned the resulting finding — culminating in the mentee presenting their discovery at the internship's final review with the CISO in attendance; also coached junior teammates on offensive CTF problem-solving.
+      - Presented a company-wide internal conference talk on AI security vulnerabilities (agent SSRF/RCE, LLM gateway SQL injection, RAG data exposure) to ~100 in-person and 300-500 online attendees, driving positive feedback and follow-up engagement across engineering; authored internal CTF events with full debriefs to scale security capability.
   - name: Bloomberg L.P.
     location: 731 Lexington Ave., New York, NY 10022
     description: A financial, software, data, and media company

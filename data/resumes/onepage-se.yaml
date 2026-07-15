@@ -1,0 +1,106 @@
+# Curated one-page resume data (Staff SWE variant).
+# This is the "recruiter cut" — aggregated/generalized on purpose.
+# The detailed master lives in se.yaml (rendered by the interactive resume).
+basics:
+  name: Alexander Bason
+  label: Staff Software Engineer — Distributed Systems, Security & AI Agents
+  location: New York, NY
+  phone: (530) 675-4199
+  email: alexander.bason+se-resume@35.yt
+  onlineUrl: https://nonsleepr.github.io/resume/#se
+  onlineLabel: Online version
+  profiles:
+    - text: nonsleepr.github.io
+      url: https://nonsleepr.github.io/
+summary: >-
+  Software engineer with nearly two decades spanning software, big-data, and
+  distributed-systems engineering, plus offensive security, including hands-on
+  technical leadership. Builds security tooling and AI-agent systems, conducts
+  offensive security research, and drives secure-by-default practices — from a
+  secret-detection pilot that grew to company-wide adoption, to org-wide proxy
+  and SSO/IdP changes driven by red team findings.
+work:
+  - name: Bloomberg L.P.
+    position: Security Engineer
+    location: New York, NY
+    dates: May 2021 – Present
+    highlights:
+      - "Authoring the RFC for a security AI-agent harness: automated threat-model generation, orchestrated code-review agents with schema-defined findings, and automated triage/dedup/validation with observability; benchmarked vs. industry-leading agentic-security frameworks."
+      - "Built AI-powered automation agents (MCP/ACP) for reconnaissance, code review, exploit development, and reporting, with insight into agent identity and trust-boundary design."
+      - "Built centralized review infrastructure and automation, making hours-long assessment tasks reproducible in minutes and speeding up team reporting and ticketing."
+      - "Spearheaded a secret-detection pilot (~24 repositories, 30–40 engineers) later adopted company-wide across thousands of repositories."
+      - "Drove org-wide identity hardening from red team findings: new SSO token-issuance defaults (fixing long-lived, replayable, over-scoped tokens across hundreds of apps) and default-on mTLS for the identity-aware proxy (Pomerium auth-bypass CVE)."
+      - "Found critical SSRF/RCE in AI agent apps and SQL injection in an internal LLM gateway; ran jailbreak, prompt-injection, and RAG exploit assessments that shaped AI deployment decisions."
+      - "Run 6–10 annual red team/pentest engagements (MITRE ATT&CK) across AI, cloud, and enterprise systems; discovered zero-days enabling full MDM compromise, AWS EKS compromise, and Domain Admin via ADCS/Kerberoasting."
+      - "Built a custom PoC/scanner for the Passport SAML bypass (CVE-2022-39299) ahead of public exploit, patching ~100 apps org-wide in a week; published 3 CVEs (Grafana, Pomerium, Squid); AArch64/AArch32 Volatility3 fork adopted by an external IR vendor."
+      - "Mentored an intern to a fuzzing find presented to the CISO; gave a company-wide AI-security talk (~100 in-person, 300–500 online); run internal CTFs."
+  - name: Bloomberg L.P.
+    position: Big Data Engineer
+    location: New York, NY
+    dates: Oct 2016 – May 2021
+    highlights:
+      - "Led adoption of Delta Lake for distributed tracing systems, migrating large-scale Hive workloads and improving scalability."
+      - "Designed a Spark Streaming monitoring service that replaced legacy systems and improved 24/7 reliability; mentored new engineers into independent contributors within a year."
+earlierCareer:
+  heading: Earlier Career (2005–2016)
+  items:
+    - Penetration Tester, IoT company
+    - Data Scientist/Data Engineer, Credit Suisse
+    - Manager, Decision Analytics, EXL Service
+    - Advanced Analytics Consultant, Teradata
+    - Senior System Analyst, Accenture
+    - Programmer, Rosbank (Societe Generale Group)
+skills:
+  - label: AI/Agent Security
+    keywords:
+      - AI agent development
+      - MCP
+      - ACP
+      - prompt injection
+      - AI jailbreak/guardrail bypass
+      - RAG security
+      - agent identity & trust boundaries
+  - label: Identity & Access
+    keywords:
+      - OAuth 2.0/OIDC
+      - SAML/SSO
+      - mTLS/PKI
+      - secrets management
+  - label: Languages & Infrastructure
+    keywords:
+      - Python
+      - Go
+      - Scala
+      - SQL
+      - C/C++
+      - AWS
+      - Docker
+      - Kubernetes
+      - CI/CD
+  - label: Distributed Systems & Data
+    keywords:
+      - Apache Spark
+      - Hadoop
+      - HBase
+      - Kafka
+      - Delta Lake
+      - MongoDB
+      - Neo4j
+  - label: Offensive Security
+    keywords:
+      - red team operations
+      - Active Directory exploitation
+      - cloud & container security
+      - web/API security
+      - memory forensics
+      - custom exploit development
+  - label: Security Tools
+    keywords:
+      - Burp Suite
+      - BloodHound
+      - Nmap
+      - Wireshark
+      - PowerShell Empire
+      - Responder
+education:
+  - M.S., Electronic Systems — Moscow Power Engineering Institute, 2006

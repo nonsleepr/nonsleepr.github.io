@@ -44,7 +44,8 @@ work:
       - Secured LLM gateway APIs by discovering SQL injection in model selection parameters, preventing backend database access and API key exfiltration.
       - Executed AI jailbreak testing to bypass safety guardrails, providing empirical risk assessments for real-world AI system deployments.
       - Assessed RAG-based AI applications, exploiting an over-permissioned retrieval tool's backend SQL access to force arbitrary file reads beyond its intended dataset scope.
-      - Expanded attack-surface coverage and reduced overhead by 25% through the development of AI-assisted reconnaissance and reporting automation.
+      - Discovered that SSO tokens were long-lived, overly permissive, and replayable — issued to service providers that didn't need that scope — and drove a resulting change to token-issuance defaults across hundreds of internal applications org-wide.
+      - Found that mTLS was not enforced on the identity-aware proxy (Pomerium, where a related authentication-bypass vulnerability I discovered and reported — CVE-2023-33189 — enabled unauthenticated access to internal sensitive systems), driving mTLS to become default-on across hundreds of applications behind the proxy.
       - Achieved Domain Administrator privileges in complex environments by exploiting Active Directory Certificate Services (ADCS) and Kerberoasting.
       - Reverse-engineered obfuscated Android/iOS applications using Frida and Magisk; bypassed certificate pinning and root detection to expose hardcoded credentials.
       - Developed custom offensive tooling, including ICMP and RDP proxies, to facilitate lateral movement within highly restrictive network environments.
@@ -52,11 +53,13 @@ work:
       - Discovered multiple critical zero-day vulnerabilities in the enterprise MDM platform, achieving full MDM compromise and demonstrating fleet-wide takeover of company-provisioned macOS endpoints.
       - Contributed key insights to an active incident response via memory-forensics analysis of compromised endpoints — reverse-engineering the malware, extracting IoCs, and reconstructing the attack timeline.
       - Orchestrated full-scope social engineering, leading successful phishing and MitM campaigns to test organizational resilience.
-      - Scaled security culture by presenting technical findings to audiences of 100+ and designing internal CTF events with comprehensive debriefs.
-      - Led organizational secret detection initiative, significantly reducing credential exposure across product teams and strengthening security posture.
-      - Collaborated with TVM and SOC teams to develop scanners and PoCs for critical open-source vulnerabilities, ensuring rapid remediation.
+      - Presented a company-wide internal conference talk on AI security vulnerabilities (agent SSRF/RCE, LLM gateway SQL injection, RAG data exposure) to ~100 in-person and 300-500 online attendees, driving positive feedback and follow-up engagement; designed internal CTF events with comprehensive debriefs to scale security culture.
+      - Mentored a security intern through fuzzing an HTML sanitizer end-to-end — building the harness and ensuring they owned the resulting finding — culminating in the mentee presenting their discovery at the internship's final review with the CISO in attendance.
+      - Spearheaded the pilot of a secret-detection initiative (~24 repositories, 30-40 engineers) that was subsequently adopted company-wide, establishing secure-by-default credential handling.
+      - Built a custom PoC and automated scanner for the Passport SAML authentication bypass (CVE-2022-39299) ahead of public exploit availability, enabling TVM and SOC teams to remediate ~100 affected applications org-wide within one week of disclosure.
       - Identified a critical pre-authentication vulnerability in a third-party product during black-box testing that had been overlooked in multiple prior assessments.
-      - Engineered custom automation scripts and infrastructure that modernized internal security review workflows and increased testing velocity.
+      - Built centralized infrastructure for engagement note-taking, replacing scattered manual notes with a single source of truth that sped up report generation and ticketing for the team.
+      - Automated recurring reconnaissance, testing, and reporting tasks — including AI-assisted workflows — making previously manual, hours-long work reproducible in minutes, expanding attack-surface coverage, and cutting overhead ~25%.
   - name: Bloomberg L.P.
     location: 731 Lexington Ave., New York, NY 10022
     description: A financial, software, data, and media company
@@ -139,9 +142,8 @@ projects:
     highlights:
       - Developed ICMP and RDP proxy tools to enable lateral movement through restrictive network environments during red team assessments.
       - Developed AI-powered offensive automation agents using MCP/ACP protocols for reconnaissance, code review assistance, exploit development, and reporting workflows.
-      - Authored an ARM-support fork of Volatility3 for memory forensics, subsequently adopted by an external incident-response vendor during a live engagement.
+      - Authored a fork of Volatility3 adding AArch64 and AArch32 support after the absence of ARM support blocked memory-forensics analysis of memory dumps from potentially compromised devices during a live incident; subsequently adopted by an external incident-response vendor, who credited the tool during a joint incident call.
       - Built custom BloodHound data transformers to ingest MDM/Jamf device and inventory data, extending attack-path analysis to endpoint-management infrastructure beyond native collectors.
-      - Created automation frameworks to streamline red team operations, improving assessment efficiency and standardizing reporting processes.
       - Built custom scanners and proof-of-concept exploits for critical vulnerabilities in open-source libraries, enabling rapid security response across engineering teams.
 education:
   - institution: Moscow Power Engineering Institute

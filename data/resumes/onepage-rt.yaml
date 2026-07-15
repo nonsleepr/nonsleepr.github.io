@@ -1,0 +1,108 @@
+# Curated one-page resume data (Offensive Security variant).
+# This is the "recruiter cut" — aggregated/generalized on purpose.
+# The detailed master lives in rt.yaml (rendered by the interactive resume, default).
+basics:
+  name: Alexander Bason
+  label: Offensive Security Researcher — AI/Agent Security & Vulnerability Research
+  location: New York, NY
+  phone: (530) 675-4199
+  email: alexander.bason+rt-resume@35.yt
+  onlineUrl: https://nonsleepr.github.io/resume/
+  onlineLabel: Online version
+  profiles:
+    - text: nonsleepr.github.io
+      url: https://nonsleepr.github.io/
+summary: >-
+  Offensive security researcher combining two decades of software engineering
+  with advanced offensive security to find critical flaws in conventional and
+  AI-driven systems. Discovered SSRF, RCE, and SQL injection in LLM gateways and
+  AI agent applications, multiple high-impact CVEs, and zero-days enabling full
+  compromise of enterprise environments through custom exploit development,
+  reverse engineering, and cloud exploitation. Builds AI-powered offensive
+  tooling (MCP/ACP) and leverages deep systems knowledge to accelerate
+  attack-path discovery and bypasses that traditional testing misses.
+work:
+  - name: Bloomberg L.P.
+    position: Red Team Operator & Security Engineer
+    location: New York, NY
+    dates: May 2021 – Present
+    highlights:
+      - "Run 6–10 annual red team/pentest engagements (MITRE ATT&CK) across AI, cloud, and enterprise systems; full compromise via deserialization, misconfigurations, and command injection with lateral movement across isolated segments."
+      - "AI/LLM offense: critical SSRF/RCE in AI agent apps (undocumented dev parameters), SQL injection in an LLM gateway, plus jailbreak, prompt-injection, and RAG data-exposure assessments that shaped AI deployment decisions."
+      - "Cloud & AD: compromised AWS EKS via IAM policy exploitation and Docker-build command injection; achieved Domain Admin via ADCS and Kerberoasting."
+      - "Identity: found long-lived, replayable, over-scoped SSO tokens driving org-wide token-issuance default changes; drove default-on mTLS for the identity-aware proxy (Pomerium auth-bypass CVE-2023-33189)."
+      - "Zero-days & research: multiple MDM zero-days enabling fleet-wide endpoint compromise; 3 published CVEs (Grafana, Pomerium, Squid); high-impact findings in third-party email-security and auth systems."
+      - "Reverse engineering & forensics: obfuscated Android/iOS RE (Frida/Magisk, cert-pinning & root-detection bypass) exposing hardcoded credentials; AArch64/AArch32 Volatility3 fork adopted by an external IR vendor during a live incident."
+      - "Offensive tooling: AI-powered recon/reporting automation (MCP/ACP), ICMP/RDP proxies, custom BloodHound MDM/Jamf transformers, and PoC scanners (e.g., Passport SAML CVE-2022-39299 → ~100 apps patched org-wide in a week)."
+      - "Ran full-scope social engineering (phishing, MitM); scaled security culture with talks to 100+ and internal CTF design."
+  - name: Bloomberg L.P.
+    position: Big Data Engineer
+    location: New York, NY
+    dates: Oct 2016 – May 2021
+    highlights:
+      - "Led adoption of Delta Lake for distributed tracing systems, migrating large-scale Hive workloads and improving scalability and query performance."
+      - "Designed a Spark Streaming monitoring service that replaced legacy systems and improved 24/7 reliability; mentored new hires into independent contributors."
+earlierCareer:
+  heading: Earlier Career (2005–2016)
+  items:
+    - Penetration Tester, IoT company
+    - Data Scientist/Data Engineer, Credit Suisse
+    - Manager, Decision Analytics, EXL Service
+    - Advanced Analytics Consultant, Teradata
+    - Senior System Analyst, Accenture
+    - Programmer, Rosbank (Societe Generale Group)
+skills:
+  - label: Offensive Security
+    keywords:
+      - red team operations
+      - Active Directory exploitation
+      - cloud & container security
+      - web/API security
+      - mobile reverse engineering
+      - custom exploit development
+      - memory forensics
+      - social engineering
+  - label: AI/LLM Security
+    keywords:
+      - prompt injection
+      - AI jailbreak
+      - LLM security assessment
+      - AI agent security
+      - agent identity & trust boundaries
+      - AI tool exploitation
+      - RAG security
+  - label: Identity & Access
+    keywords:
+      - OAuth 2.0/OIDC
+      - SAML/SSO
+      - mTLS/PKI
+      - secrets management
+  - label: Security Tools
+    keywords:
+      - Burp Suite
+      - Frida
+      - BloodHound
+      - Metasploit
+      - SQLMap
+      - Nmap
+      - Wireshark
+  - label: Languages & Automation
+    keywords:
+      - Python
+      - Go
+      - PowerShell
+      - Scala
+      - SQL
+      - C/C++
+      - MCP/ACP agent development
+  - label: Data & Infrastructure
+    keywords:
+      - Apache Spark
+      - Hadoop
+      - Kafka
+      - Delta Lake
+      - AWS
+      - Docker
+      - Kubernetes
+education:
+  - M.S., Electronic Systems — Moscow Power Engineering Institute, 2006
