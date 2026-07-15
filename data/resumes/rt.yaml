@@ -1,20 +1,21 @@
 $schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
 basics:
   name: Alexander Bason
-  label: Red Team Operator | Offensive Security Engineer | Vulnerability Researcher
+  label: Offensive Security Researcher | AI/Agent Security & Vulnerability Research
   image: "https://avatars.githubusercontent.com/u/2337602"
   email: "alexander.bason+rt-resume@35.yt"
   phone: (530) 675-4199
   url: https://nonsleepr.github.io/
   summary: |-
-    Red team operator and vulnerability researcher combining two decades of software
-    engineering with advanced offensive security to identify critical flaws that
-    bypass traditional controls. Discovered multiple high-impact CVEs and achieved
-    full compromise of complex enterprise environments through custom exploit
-    development, mobile application reverse engineering, and cloud infrastructure
-    exploitation. Leverages deep distributed systems knowledge to accelerate attack
-    path identification and develop sophisticated bypass techniques that traditional
-    security testing often misses.
+    Offensive security researcher combining two decades of software engineering with
+    advanced offensive security to find critical flaws in both conventional and
+    AI-driven systems. Discovered SSRF, RCE, and SQL injection in LLM gateways and
+    AI agent applications, multiple high-impact CVEs, and zero-day vulnerabilities
+    enabling full compromise of complex enterprise environments through custom
+    exploit development, mobile and malware reverse engineering, and cloud
+    infrastructure exploitation. Builds AI-powered offensive tooling on MCP/ACP and
+    leverages deep distributed-systems knowledge to accelerate attack-path
+    identification and develop bypass techniques that traditional testing misses.
   location:
     address: ""
     postalCode: NY 10022
@@ -42,15 +43,18 @@ work:
       - Identified critical SSRF and RCE vulnerabilities in AI agent applications by uncovering undocumented dev parameters and chaining exploits to compromise internal services.
       - Secured LLM gateway APIs by discovering SQL injection in model selection parameters, preventing backend database access and API key exfiltration.
       - Executed AI jailbreak testing to bypass safety guardrails, providing empirical risk assessments for real-world AI system deployments.
+      - Assessed RAG-based AI applications, exploiting an over-permissioned retrieval tool's backend SQL access to force arbitrary file reads beyond its intended dataset scope.
       - Expanded attack-surface coverage and reduced overhead by 25% through the development of AI-assisted reconnaissance and reporting automation.
       - Achieved Domain Administrator privileges in complex environments by exploiting Active Directory Certificate Services (ADCS) and Kerberoasting.
       - Reverse-engineered obfuscated Android/iOS applications using Frida and Magisk; bypassed certificate pinning and root detection to expose hardcoded credentials.
       - Developed custom offensive tooling, including ICMP and RDP proxies, to facilitate lateral movement within highly restrictive network environments.
       - Discovered high-impact vulnerabilities in third-party email security and authentication systems through dedicated vulnerability research.
+      - Discovered multiple critical zero-day vulnerabilities in the enterprise MDM platform, achieving full MDM compromise and demonstrating fleet-wide takeover of company-provisioned macOS endpoints.
+      - Contributed key insights to an active incident response via memory-forensics analysis of compromised endpoints — reverse-engineering the malware, extracting IoCs, and reconstructing the attack timeline.
       - Orchestrated full-scope social engineering, leading successful phishing and MitM campaigns to test organizational resilience.
       - Scaled security culture by presenting technical findings to audiences of 100+ and designing internal CTF events with comprehensive debriefs.
       - Led organizational secret detection initiative, significantly reducing credential exposure across product teams and strengthening security posture.
-      - Collaborated with TVM and CSOC teams to develop scanners and PoCs for critical open-source vulnerabilities, ensuring rapid remediation.
+      - Collaborated with TVM and SOC teams to develop scanners and PoCs for critical open-source vulnerabilities, ensuring rapid remediation.
       - Identified a critical pre-authentication vulnerability in a third-party product during black-box testing that had been overlooked in multiple prior assessments.
       - Engineered custom automation scripts and infrastructure that modernized internal security review workflows and increased testing velocity.
   - name: Bloomberg L.P.
@@ -135,6 +139,8 @@ projects:
     highlights:
       - Developed ICMP and RDP proxy tools to enable lateral movement through restrictive network environments during red team assessments.
       - Developed AI-powered offensive automation agents using MCP/ACP protocols for reconnaissance, code review assistance, exploit development, and reporting workflows.
+      - Authored an ARM-support fork of Volatility3 for memory forensics, subsequently adopted by an external incident-response vendor during a live engagement.
+      - Built custom BloodHound data transformers to ingest MDM/Jamf device and inventory data, extending attack-path analysis to endpoint-management infrastructure beyond native collectors.
       - Created automation frameworks to streamline red team operations, improving assessment efficiency and standardizing reporting processes.
       - Built custom scanners and proof-of-concept exploits for critical vulnerabilities in open-source libraries, enabling rapid security response across engineering teams.
 education:
@@ -158,6 +164,7 @@ skills:
       - API Security Testing
       - Custom Exploit Development
       - Red Team Operations
+      - Memory Forensics
       - Social Engineering
   - name: AI/LLM Security
     level: Master
@@ -166,7 +173,16 @@ skills:
       - AI Jailbreak Testing
       - LLM Security Assessment
       - AI Agent Security
+      - Agent Identity & Trust Boundaries
       - AI Tool Exploitation
+      - RAG Security
+  - name: Identity & Access
+    level: Master
+    keywords:
+      - OAuth 2.0 / OIDC
+      - SAML / SSO
+      - mTLS / PKI
+      - Secrets Management
   - name: Security Tools
     level: Master
     keywords:
