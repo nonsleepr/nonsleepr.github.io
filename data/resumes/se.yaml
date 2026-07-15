@@ -1,22 +1,22 @@
 $schema: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
 basics:
   name: Alexander Bason
-  label: Lead Software Enginer
+  label: Staff Software Engineer | Distributed Systems, Security & AI Agents
   image: "https://avatars.githubusercontent.com/u/2337602"
   email: "alexander.bason+se-resume@35.yt"
   phone: (530) 675-4199
   url: https://nonsleepr.github.io/
   summary: |-
-    Accomplished Lead Software Engineer with nearly 20 years of diverse
-    experience spanning software development, big data engineering, and
-    security leadership. Demonstrated expertise in designing and delivering
-    scalable solutions, enhancing team productivity, and mentoring engineers to
-    achieve excellence. Adept at leading cross-functional initiatives,
-    integrating security into development processes, and driving innovation
-    through advanced tools and frameworks. Proven track record of spearheading
-    complex projects, resolving critical vulnerabilities, and contributing to
-    organizational success through technical insight and effective
-    collaboration.
+    Software engineer with nearly two decades spanning software, big-data, and
+    distributed-systems engineering, plus offensive security, including hands-on
+    technical leadership. Builds security tooling and AI-agent
+    systems, conducts offensive security research, and drives secure-by-default
+    practices that scale across engineering organizations — from a
+    secret-detection program that grew from a pilot to company-wide adoption, to
+    org-wide proxy and SSO/IdP default changes driven by red team findings.
+    Combines deep systems knowledge with an adversarial mindset to design,
+    prototype, and ship reliable systems, and mentors engineers across security
+    and software teams.
   location:
     address: ""
     postalCode: NY 10022
@@ -31,7 +31,17 @@ basics:
       username: nonsleepr
       url: https://github.com/nonsleepr
 projects:
-  - name: Vulnerability Research
+  - name: AI & Agent Security Tooling
+    highlights:
+      - Designing a security AI-agent harness that formalizes multi-agent data flows and agentic loops (threat modeling, orchestrated code-review agents with schema-defined findings, automated triage/deduplication/validation) with built-in observability.
+      - Built AI-powered automation agents on MCP (Model Context Protocol) and ACP (Agent-Client Protocol) for reconnaissance, code review, exploit development, and reporting workflows.
+      - Developed guardrail-bypass and prompt-injection test methodologies for LLM applications, producing empirical risk assessments used to inform AI deployment decisions.
+  - name: Systems & Security Tooling
+    highlights:
+      - Authored an ARM-support fork of Volatility3 for memory forensics, subsequently adopted by an external incident-response vendor during a live engagement.
+      - Built custom BloodHound data transformers to ingest MDM/Jamf device and inventory data, extending attack-path analysis to endpoint-management infrastructure.
+      - Developed ICMP and RDP proxy tools and custom scanners/PoC exploits for critical open-source library vulnerabilities, enabling rapid security response across engineering teams.
+  - name: Vulnerability Research (Published CVEs)
     highlights:
       - Identified a dependency on a vulnerable library (CVE-2022-41912) within Grafana, demonstrated an authentication bypass within the product. Reported the finding to the vendor, enabling a critical security update.
       - Identified and reported critical authentication bypass vulnerability in Pomerium access proxy (CVE-2023-33189).
@@ -44,22 +54,35 @@ work:
     url: https://www.bloomberg.com
     startDate: "2021-05-01"
     summary: |-
-      As an internal red team operator, I conducted covert and overt adversary
-      emulation to identify security risks, report them and work with security
-      and engineering groups to remediate the vulnerabilities and improve
-      overal security posture of the company.
+      Working across security and engineering, I build security tooling and
+      AI-agent systems, conduct offensive security research, and drive
+      secure-by-default practices — turning findings and prototypes into durable
+      infrastructure and standards adopted across the organization.
     highlights:
-      - Led the initiative to integrate secret detection tools across engineering teams, enhancing secure development practices and strengthening the organization’s security posture.
-      - Transitioned from a hands-on engineering role to security leadership, quickly mastering advanced security testing methodologies and mentoring teams on best practices.
-      - Collaborated with engineering and security teams to implement scalable solutions for identified vulnerabilities, including custom proof-of-concept tools and automated scanners for critical vulnerabilities in open-source libraries.
-      - Developed and optimized tools, scripts, and infrastructure to automate complex tasks, significantly improving team efficiency and scalability.
-      - Spearheaded the development of custom offensive and defensive tooling, including ICMP and RDP proxies, while enabling secure and efficient lateral movement in restrictive network environments.
-      - Conducted technical reviews and assessments for critical systems, uncovering high-value vulnerabilities and influencing design improvements for internal and third-party applications.
-      - Delivered impactful technical presentations to audiences of over 100 engineers, fostering cross-functional collaboration and promoting secure development practices.
-      - Achieved impactful outcomes in vulnerability research, including identifying high-impact flaws in authentication mechanisms and cloud infrastructure misconfigurations, influencing product security improvements.
-      - Executed and led complex engagements, including penetration tests and red team simulations, aligning findings with engineering priorities to drive infrastructure and application enhancements.
-      - Collaborated with cross-functional teams, including Threat and Vulnerability Management (TVM) and Cyber Security Operations Center (CSOC), to resolve security incidents and establish long-term remediation strategies.
-      - Championed knowledge-sharing initiatives, mentoring teammates on security tools and methodologies, and cultivating a culture of continuous learning and improvement.
+      # --- Building / AI agents / force-multiplier (staff signal) ---
+      - Authoring the specification/RFC for a security AI-agent harness that formalizes multi-agent data flows and agentic loops — threat-model generation against a standardized schema, an orchestrator dispatching parallel code-review agents that emit schema-defined pre-triage findings, and automated triage, deduplication, and validation — with observability built in.
+      - Built AI-powered automation agents (MCP/ACP) for reconnaissance, code review, exploit development, and reporting, gaining first-hand insight into agent identity, tool-invocation, and trust-boundary design.
+      - Spearheaded the pilot of a secret-detection initiative (~24 repositories, 30-40 engineers) that was subsequently adopted company-wide across thousands of repositories, establishing secure-by-default credential handling.
+      - Engineered custom automation and infrastructure that modernized internal security review workflows and increased testing velocity across the team.
+      - Built reusable scanners and proof-of-concept exploits with TVM and SOC teams for critical open-source vulnerabilities, enabling rapid, org-wide remediation.
+      - Developed custom network tooling, including ICMP and RDP proxies, to enable secure and efficient traversal of restrictive network environments.
+      - Authored an ARM-support fork of Volatility3, subsequently adopted by an external incident-response vendor during a live engagement.
+      # --- Adversarial perspective applied to architecture & identity ---
+      - Drove changes to organization-wide proxy policies and SSO/IdP secure defaults as a direct result of red team findings.
+      - Prompted org-wide mTLS enforcement through red team findings and demonstrated SAML/OAuth authentication abuses that informed identity hardening.
+      - Identified critical SSRF and RCE in AI agent applications and SQL injection in an internal LLM gateway, informing how agent-based products and gateway APIs were hardened before wider rollout.
+      - Executed AI jailbreak and prompt-injection testing to bypass safety guardrails, translating findings into empirical risk assessments that shaped AI deployment decisions.
+      - Assessed RAG-based AI applications, exploiting an over-permissioned retrieval tool's backend SQL access to force arbitrary file reads beyond its intended dataset scope.
+      # --- Offensive security depth ---
+      - Conducted 6-10 annual red team and penetration testing engagements simulating APTs (MITRE ATT&CK) against AI systems, cloud infrastructure, and enterprise applications.
+      - Compromised AWS EKS clusters via IAM policy exploitation and command injection during Docker builds, demonstrating deep container and cloud security proficiency.
+      - Discovered multiple critical zero-day vulnerabilities in the enterprise MDM platform, achieving full MDM compromise and demonstrating how weak device-management trust enables fleet-wide takeover of company-provisioned endpoints.
+      - Contributed key insights to an active incident response via memory-forensics analysis of compromised endpoints — reverse-engineering the malware, extracting IoCs, and reconstructing the attack timeline.
+      - Achieved Domain Administrator privileges by exploiting Active Directory Certificate Services (ADCS) and Kerberoasting, and reverse-engineered obfuscated mobile applications (Frida/Magisk) to expose hardcoded credentials.
+      - Identified a critical pre-authentication vulnerability in a third-party product during black-box testing that had been missed in multiple prior assessments.
+      # --- Leadership & culture ---
+      - Mentored security and software engineers and led red team engagements several times per year, setting direction on offensive tooling and methodology.
+      - Presented technical findings to audiences of 100+ engineers and authored internal CTF events with full debriefs, scaling security capability across teams.
   - name: Bloomberg L.P.
     location: 731 Lexington Ave., New York, NY 10022
     description: A financial, software, data, and media company
@@ -140,25 +163,24 @@ education:
     startDate: "2000-09-01"
     endDate: "2006-06-30"
 skills:
-  - name: Offensive Security
+  - name: AI/LLM & Agent Security
     level: Master
     keywords:
-      - Network Penetration Testing
-      - Active Directory Exploitation
-      - Cloud Security Assessment (AWS)
-      - Web Application Security
-      - Custom Exploit Development
-      - Red Team Operations
-      - Social Engineering
-  - name: Security Tools
+      - AI Agent Development
+      - MCP (Model Context Protocol)
+      - ACP (Agent-Client Protocol)
+      - Agent Identity & Trust Boundaries
+      - LLM Security Assessment
+      - Prompt Injection
+      - AI Jailbreak / Guardrail Bypass
+      - RAG Security
+  - name: Identity & Access
     level: Master
     keywords:
-      - Burp Suite
-      - PowerShell Empire
-      - Bloodhound
-      - Responder
-      - Nmap
-      - Wireshark
+      - OAuth 2.0 / OIDC
+      - SAML / SSO
+      - mTLS / PKI
+      - Secrets Management
   - name: Programming Languages
     level: Master
     keywords:
@@ -175,7 +197,8 @@ skills:
       - Docker
       - Kubernetes
       - CI/CD
-  - name: Data Engineering
+      - Proxies / Routing / Firewalls / VPNs
+  - name: Distributed Systems & Data
     level: Master
     keywords:
       - Apache Spark
@@ -185,8 +208,29 @@ skills:
       - Delta Lake
       - MongoDB
       - Neo4j
+  - name: Offensive Security
+    level: Master
+    keywords:
+      - Network Penetration Testing
+      - Active Directory Exploitation
+      - Cloud Security Assessment (AWS)
+      - Container Security (Docker/Kubernetes)
+      - Web & API Security
+      - Custom Exploit Development
+      - Red Team Operations
+      - Memory Forensics
+      - Social Engineering
+  - name: Security Tools
+    level: Master
+    keywords:
+      - Burp Suite
+      - PowerShell Empire
+      - Bloodhound
+      - Responder
+      - Nmap
+      - Wireshark
 meta:
   canonical: https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/sample.resume.json
   version: v1.0.0
-  lastModified: 2017-12-24T15:53:00
+  lastModified: 2026-07-15T00:00:00
   theme: jsonresume-theme-even
